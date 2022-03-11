@@ -1,0 +1,1621 @@
+2022-02-17 15:10:47 [scrapy.utils.log] INFO: Scrapy 2.5.1 started (bot: crawlerWithoutLogin)
+2022-02-17 15:10:47 [scrapy.utils.log] INFO: Versions: lxml 4.6.4.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 21.0.0 (OpenSSL 1.1.1l  24 Aug 2021), cryptography 35.0.0, Platform Windows-10-10.0.19043-SP0
+2022-02-17 15:10:47 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-02-17 15:10:47 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'crawlerWithoutLogin',
+ 'CONCURRENT_REQUESTS': 1,
+ 'NEWSPIDER_MODULE': 'crawlerWithoutLogin.spiders',
+ 'SPIDER_MODULES': ['crawlerWithoutLogin.spiders']}
+2022-02-17 15:10:47 [scrapy.extensions.telnet] INFO: Telnet Password: 06e141f0ceda79c5
+2022-02-17 15:10:48 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2022-02-17 15:10:48 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-02-17 15:10:48 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-02-17 15:10:48 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2022-02-17 15:10:48 [scrapy.core.engine] INFO: Spider opened
+2022-02-17 15:10:48 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-02-17 15:10:48 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-02-17 15:10:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/login> (referer: None)
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/login>
+{'link': 'https://quotes.toscrape.com/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/login>
+{'link': 'https://quotes.toscrape.com/login'}
+2022-02-17 15:10:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/login> (referer: https://quotes.toscrape.com/login)
+2022-02-17 15:10:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/> (referer: https://quotes.toscrape.com/login)
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/author/Albert-Einstein'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/change/page/1/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/deep-thoughts/page/1/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/thinking/page/1/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/world/page/1/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/author/J-K-Rowling'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/abilities/page/1/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/choices/page/1/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/author/Albert-Einstein'}
+2022-02-17 15:10:49 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://quotes.toscrape.com/author/Albert-Einstein> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/inspirational/page/1/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/life/page/1/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/live/page/1/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/miracle/page/1/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/miracles/page/1/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/author/Jane-Austen'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/aliteracy/page/1/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/books/page/1/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/classic/page/1/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/humor/page/1/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/author/Marilyn-Monroe'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/be-yourself/page/1/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/inspirational/page/1/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/author/Albert-Einstein'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/adulthood/page/1/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/success/page/1/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/value/page/1/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/author/Andre-Gide'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/life/page/1/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/love/page/1/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/author/Thomas-A-Edison'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/edison/page/1/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/failure/page/1/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/inspirational/page/1/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/paraphrased/page/1/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/author/Eleanor-Roosevelt'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/misattributed-eleanor-roosevelt/page/1/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/author/Steve-Martin'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/humor/page/1/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/obvious/page/1/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/simile/page/1/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/page/2/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/love/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/inspirational/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/life/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/humor/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/books/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/reading/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/friendship/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/friends/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/truth/'}
+2022-02-17 15:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/>
+{'link': 'https://quotes.toscrape.com/tag/simile/'}
+2022-02-17 15:10:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/obvious/page/1/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:10:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/simile/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:10:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/simile/>
+{'link': 'https://quotes.toscrape.com/author/Stephenie-Meyer'}
+2022-02-17 15:10:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/simile/>
+{'link': 'https://quotes.toscrape.com/tag/drug/page/1/'}
+2022-02-17 15:10:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/simile/>
+{'link': 'https://quotes.toscrape.com/tag/romance/page/1/'}
+2022-02-17 15:10:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/truth/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:10:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/truth/>
+{'link': 'https://quotes.toscrape.com/tag/truth/page/1/'}
+2022-02-17 15:10:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/truth/>
+{'link': 'https://quotes.toscrape.com/author/George-Carlin'}
+2022-02-17 15:10:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/truth/>
+{'link': 'https://quotes.toscrape.com/tag/insanity/page/1/'}
+2022-02-17 15:10:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/truth/>
+{'link': 'https://quotes.toscrape.com/tag/lies/page/1/'}
+2022-02-17 15:10:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/truth/>
+{'link': 'https://quotes.toscrape.com/tag/lying/page/1/'}
+2022-02-17 15:10:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/truth/>
+{'link': 'https://quotes.toscrape.com/tag/self-indulgence/page/1/'}
+2022-02-17 15:10:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/truth/>
+{'link': 'https://quotes.toscrape.com/tag/truth/page/1/'}
+2022-02-17 15:10:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/truth/>
+{'link': 'https://quotes.toscrape.com/author/Mark-Twain'}
+2022-02-17 15:10:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/truth/>
+{'link': 'https://quotes.toscrape.com/tag/misattributed-mark-twain/page/1/'}
+2022-02-17 15:10:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/truth/>
+{'link': 'https://quotes.toscrape.com/tag/truth/page/1/'}
+2022-02-17 15:10:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/truth/>
+{'link': 'https://quotes.toscrape.com/tag/truth/page/1/'}
+2022-02-17 15:10:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/truth/>
+{'link': 'https://quotes.toscrape.com/author/Mark-Twain'}
+2022-02-17 15:10:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/truth/>
+{'link': 'https://quotes.toscrape.com/tag/truth/page/1/'}
+2022-02-17 15:10:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/romance/page/1/> (referer: https://quotes.toscrape.com/tag/simile/)
+2022-02-17 15:10:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/misattributed-mark-twain/page/1/> (referer: https://quotes.toscrape.com/tag/truth/)
+2022-02-17 15:10:50 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Mark-Twain/> from <GET https://quotes.toscrape.com/author/Mark-Twain>
+2022-02-17 15:10:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Mark-Twain/> (referer: None)
+2022-02-17 15:10:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/self-indulgence/page/1/> (referer: https://quotes.toscrape.com/tag/truth/)
+2022-02-17 15:10:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/lying/page/1/> (referer: https://quotes.toscrape.com/tag/truth/)
+2022-02-17 15:10:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/lies/page/1/> (referer: https://quotes.toscrape.com/tag/truth/)
+2022-02-17 15:10:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/insanity/page/1/> (referer: https://quotes.toscrape.com/tag/truth/)
+2022-02-17 15:10:52 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/George-Carlin/> from <GET https://quotes.toscrape.com/author/George-Carlin>
+2022-02-17 15:10:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/George-Carlin/> (referer: None)
+2022-02-17 15:10:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/truth/page/1/> (referer: https://quotes.toscrape.com/tag/truth/)
+2022-02-17 15:10:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/drug/page/1/> (referer: https://quotes.toscrape.com/tag/simile/)
+2022-02-17 15:10:53 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Stephenie-Meyer/> from <GET https://quotes.toscrape.com/author/Stephenie-Meyer>
+2022-02-17 15:10:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Stephenie-Meyer/> (referer: None)
+2022-02-17 15:10:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/friends/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/friends/>
+{'link': 'https://quotes.toscrape.com/tag/friends/page/1/'}
+2022-02-17 15:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/friends/>
+{'link': 'https://quotes.toscrape.com/tag/friends/page/1/'}
+2022-02-17 15:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/friends/>
+{'link': 'https://quotes.toscrape.com/tag/heartbreak/page/1/'}
+2022-02-17 15:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/friends/>
+{'link': 'https://quotes.toscrape.com/tag/sisters/page/1/'}
+2022-02-17 15:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/friends/>
+{'link': 'https://quotes.toscrape.com/tag/courage/page/1/'}
+2022-02-17 15:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/friends/>
+{'link': 'https://quotes.toscrape.com/tag/friends/page/1/'}
+2022-02-17 15:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/friends/>
+{'link': 'https://quotes.toscrape.com/tag/contentment/page/1/'}
+2022-02-17 15:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/friends/>
+{'link': 'https://quotes.toscrape.com/tag/friends/page/1/'}
+2022-02-17 15:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/friends/>
+{'link': 'https://quotes.toscrape.com/tag/friendship/page/1/'}
+2022-02-17 15:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/friends/>
+{'link': 'https://quotes.toscrape.com/author/Ernest-Hemingway'}
+2022-02-17 15:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/friends/>
+{'link': 'https://quotes.toscrape.com/tag/friends/page/1/'}
+2022-02-17 15:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/friends/>
+{'link': 'https://quotes.toscrape.com/tag/novelist-quotes/page/1/'}
+2022-02-17 15:10:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/friendship/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/friendship/>
+{'link': 'https://quotes.toscrape.com/author/Friedrich-Nietzsche'}
+2022-02-17 15:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/friendship/>
+{'link': 'https://quotes.toscrape.com/tag/lack-of-friendship/page/1/'}
+2022-02-17 15:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/friendship/>
+{'link': 'https://quotes.toscrape.com/tag/lack-of-love/page/1/'}
+2022-02-17 15:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/friendship/>
+{'link': 'https://quotes.toscrape.com/tag/marriage/page/1/'}
+2022-02-17 15:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/friendship/>
+{'link': 'https://quotes.toscrape.com/tag/unhappy-marriage/page/1/'}
+2022-02-17 15:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/friendship/>
+{'link': 'https://quotes.toscrape.com/author/Bob-Marley'}
+2022-02-17 15:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/friendship/>
+{'link': 'https://quotes.toscrape.com/author/Alfred-Tennyson'}
+2022-02-17 15:10:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/novelist-quotes/page/1/> (referer: https://quotes.toscrape.com/tag/friends/)
+2022-02-17 15:10:54 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Alfred-Tennyson/> from <GET https://quotes.toscrape.com/author/Alfred-Tennyson>
+2022-02-17 15:10:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Alfred-Tennyson/> (referer: None)
+2022-02-17 15:10:55 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Bob-Marley/> from <GET https://quotes.toscrape.com/author/Bob-Marley>
+2022-02-17 15:10:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Bob-Marley/> (referer: None)
+2022-02-17 15:10:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/unhappy-marriage/page/1/> (referer: https://quotes.toscrape.com/tag/friendship/)
+2022-02-17 15:10:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/marriage/page/1/> (referer: https://quotes.toscrape.com/tag/friendship/)
+2022-02-17 15:10:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/lack-of-love/page/1/> (referer: https://quotes.toscrape.com/tag/friendship/)
+2022-02-17 15:10:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/lack-of-friendship/page/1/> (referer: https://quotes.toscrape.com/tag/friendship/)
+2022-02-17 15:10:56 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Friedrich-Nietzsche/> from <GET https://quotes.toscrape.com/author/Friedrich-Nietzsche>
+2022-02-17 15:10:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Friedrich-Nietzsche/> (referer: None)
+2022-02-17 15:10:57 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Ernest-Hemingway/> from <GET https://quotes.toscrape.com/author/Ernest-Hemingway>
+2022-02-17 15:10:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Ernest-Hemingway/> (referer: None)
+2022-02-17 15:10:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/friendship/page/1/> (referer: https://quotes.toscrape.com/tag/friends/)
+2022-02-17 15:10:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/contentment/page/1/> (referer: https://quotes.toscrape.com/tag/friends/)
+2022-02-17 15:10:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/courage/page/1/> (referer: https://quotes.toscrape.com/tag/friends/)
+2022-02-17 15:10:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/courage/page/1/>
+{'link': 'https://quotes.toscrape.com/author/E-E-Cummings'}
+2022-02-17 15:10:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/sisters/page/1/> (referer: https://quotes.toscrape.com/tag/friends/)
+2022-02-17 15:10:58 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/E-E-Cummings/> from <GET https://quotes.toscrape.com/author/E-E-Cummings>
+2022-02-17 15:10:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/E-E-Cummings/> (referer: None)
+2022-02-17 15:10:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/heartbreak/page/1/> (referer: https://quotes.toscrape.com/tag/friends/)
+2022-02-17 15:10:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/friends/page/1/> (referer: https://quotes.toscrape.com/tag/friends/)
+2022-02-17 15:10:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/reading/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/reading/>
+{'link': 'https://quotes.toscrape.com/tag/reading/page/1/'}
+2022-02-17 15:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/reading/>
+{'link': 'https://quotes.toscrape.com/author/Dr-Seuss'}
+2022-02-17 15:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/reading/>
+{'link': 'https://quotes.toscrape.com/tag/learning/page/1/'}
+2022-02-17 15:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/reading/>
+{'link': 'https://quotes.toscrape.com/tag/reading/page/1/'}
+2022-02-17 15:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/reading/>
+{'link': 'https://quotes.toscrape.com/tag/seuss/page/1/'}
+2022-02-17 15:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/reading/>
+{'link': 'https://quotes.toscrape.com/author/William-Nicholson'}
+2022-02-17 15:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/reading/>
+{'link': 'https://quotes.toscrape.com/tag/misattributed-to-c-s-lewis/page/1/'}
+2022-02-17 15:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/reading/>
+{'link': 'https://quotes.toscrape.com/tag/reading/page/1/'}
+2022-02-17 15:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/reading/>
+{'link': 'https://quotes.toscrape.com/author/George-R-R-Martin'}
+2022-02-17 15:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/reading/>
+{'link': 'https://quotes.toscrape.com/tag/read/page/1/'}
+2022-02-17 15:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/reading/>
+{'link': 'https://quotes.toscrape.com/tag/readers/page/1/'}
+2022-02-17 15:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/reading/>
+{'link': 'https://quotes.toscrape.com/tag/reading/page/1/'}
+2022-02-17 15:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/reading/>
+{'link': 'https://quotes.toscrape.com/tag/reading-books/page/1/'}
+2022-02-17 15:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/reading/>
+{'link': 'https://quotes.toscrape.com/author/C-S-Lewis'}
+2022-02-17 15:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/reading/>
+{'link': 'https://quotes.toscrape.com/tag/reading/page/1/'}
+2022-02-17 15:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/reading/>
+{'link': 'https://quotes.toscrape.com/tag/tea/page/1/'}
+2022-02-17 15:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/reading/>
+{'link': 'https://quotes.toscrape.com/author/J-D-Salinger'}
+2022-02-17 15:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/reading/>
+{'link': 'https://quotes.toscrape.com/tag/authors/page/1/'}
+2022-02-17 15:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/reading/>
+{'link': 'https://quotes.toscrape.com/tag/literature/page/1/'}
+2022-02-17 15:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/reading/>
+{'link': 'https://quotes.toscrape.com/tag/reading/page/1/'}
+2022-02-17 15:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/reading/>
+{'link': 'https://quotes.toscrape.com/tag/writing/page/1/'}
+2022-02-17 15:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/reading/>
+{'link': 'https://quotes.toscrape.com/tag/reading/page/1/'}
+2022-02-17 15:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/reading/>
+{'link': 'https://quotes.toscrape.com/tag/library/page/1/'}
+2022-02-17 15:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/reading/>
+{'link': 'https://quotes.toscrape.com/tag/reading/page/1/'}
+2022-02-17 15:10:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/books/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/books/>
+{'link': 'https://quotes.toscrape.com/author/Jorge-Luis-Borges'}
+2022-02-17 15:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/books/>
+{'link': 'https://quotes.toscrape.com/author/Haruki-Murakami'}
+2022-02-17 15:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/books/>
+{'link': 'https://quotes.toscrape.com/tag/thought/page/1/'}
+2022-02-17 15:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/books/>
+{'link': 'https://quotes.toscrape.com/author/Madeleine-LEngle'}
+2022-02-17 15:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/books/>
+{'link': 'https://quotes.toscrape.com/tag/children/page/1/'}
+2022-02-17 15:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/books/>
+{'link': 'https://quotes.toscrape.com/tag/difficult/page/1/'}
+2022-02-17 15:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/books/>
+{'link': 'https://quotes.toscrape.com/tag/grown-ups/page/1/'}
+2022-02-17 15:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/books/>
+{'link': 'https://quotes.toscrape.com/tag/write/page/1/'}
+2022-02-17 15:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/books/>
+{'link': 'https://quotes.toscrape.com/tag/writers/page/1/'}
+2022-02-17 15:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/books/>
+{'link': 'https://quotes.toscrape.com/tag/books/page/2/'}
+2022-02-17 15:10:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/library/page/1/> (referer: https://quotes.toscrape.com/tag/reading/)
+2022-02-17 15:11:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/books/page/2/> (referer: https://quotes.toscrape.com/tag/books/)
+2022-02-17 15:11:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/books/page/2/>
+{'link': 'https://quotes.toscrape.com/tag/mind/page/1/'}
+2022-02-17 15:11:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/writers/page/1/> (referer: https://quotes.toscrape.com/tag/books/)
+2022-02-17 15:11:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/mind/page/1/> (referer: https://quotes.toscrape.com/tag/books/page/2/)
+2022-02-17 15:11:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/write/page/1/> (referer: https://quotes.toscrape.com/tag/books/)
+2022-02-17 15:11:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/grown-ups/page/1/> (referer: https://quotes.toscrape.com/tag/books/)
+2022-02-17 15:11:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/difficult/page/1/> (referer: https://quotes.toscrape.com/tag/books/)
+2022-02-17 15:11:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/children/page/1/> (referer: https://quotes.toscrape.com/tag/books/)
+2022-02-17 15:11:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/children/page/1/>
+{'link': 'https://quotes.toscrape.com/tag/fairy-tales/page/1/'}
+2022-02-17 15:11:01 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Madeleine-LEngle/> from <GET https://quotes.toscrape.com/author/Madeleine-LEngle>
+2022-02-17 15:11:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Madeleine-LEngle/> (referer: None)
+2022-02-17 15:11:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/fairy-tales/page/1/> (referer: https://quotes.toscrape.com/tag/children/page/1/)
+2022-02-17 15:11:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/thought/page/1/> (referer: https://quotes.toscrape.com/tag/books/)
+2022-02-17 15:11:02 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Haruki-Murakami/> from <GET https://quotes.toscrape.com/author/Haruki-Murakami>
+2022-02-17 15:11:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Haruki-Murakami/> (referer: None)
+2022-02-17 15:11:02 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Jorge-Luis-Borges/> from <GET https://quotes.toscrape.com/author/Jorge-Luis-Borges>
+2022-02-17 15:11:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Jorge-Luis-Borges/> (referer: None)
+2022-02-17 15:11:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/writing/page/1/> (referer: https://quotes.toscrape.com/tag/reading/)
+2022-02-17 15:11:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/writing/page/1/>
+{'link': 'https://quotes.toscrape.com/tag/good/page/1/'}
+2022-02-17 15:11:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/literature/page/1/> (referer: https://quotes.toscrape.com/tag/reading/)
+2022-02-17 15:11:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/good/page/1/> (referer: https://quotes.toscrape.com/tag/writing/page/1/)
+2022-02-17 15:11:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/authors/page/1/> (referer: https://quotes.toscrape.com/tag/reading/)
+2022-02-17 15:11:04 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/J-D-Salinger/> from <GET https://quotes.toscrape.com/author/J-D-Salinger>
+2022-02-17 15:11:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/J-D-Salinger/> (referer: None)
+2022-02-17 15:11:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/tea/page/1/> (referer: https://quotes.toscrape.com/tag/reading/)
+2022-02-17 15:11:05 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/C-S-Lewis/> from <GET https://quotes.toscrape.com/author/C-S-Lewis>
+2022-02-17 15:11:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/C-S-Lewis/> (referer: None)
+2022-02-17 15:11:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/reading-books/page/1/> (referer: https://quotes.toscrape.com/tag/reading/)
+2022-02-17 15:11:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/readers/page/1/> (referer: https://quotes.toscrape.com/tag/reading/)
+2022-02-17 15:11:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/read/page/1/> (referer: https://quotes.toscrape.com/tag/reading/)
+2022-02-17 15:11:06 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/George-R-R-Martin/> from <GET https://quotes.toscrape.com/author/George-R-R-Martin>
+2022-02-17 15:11:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/George-R-R-Martin/> (referer: None)
+2022-02-17 15:11:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/misattributed-to-c-s-lewis/page/1/> (referer: https://quotes.toscrape.com/tag/reading/)
+2022-02-17 15:11:07 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/William-Nicholson/> from <GET https://quotes.toscrape.com/author/William-Nicholson>
+2022-02-17 15:11:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/William-Nicholson/> (referer: None)
+2022-02-17 15:11:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/seuss/page/1/> (referer: https://quotes.toscrape.com/tag/reading/)
+2022-02-17 15:11:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/learning/page/1/> (referer: https://quotes.toscrape.com/tag/reading/)
+2022-02-17 15:11:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/learning/page/1/>
+{'link': 'https://quotes.toscrape.com/tag/knowledge/page/1/'}
+2022-02-17 15:11:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/learning/page/1/>
+{'link': 'https://quotes.toscrape.com/tag/understanding/page/1/'}
+2022-02-17 15:11:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/learning/page/1/>
+{'link': 'https://quotes.toscrape.com/tag/wisdom/page/1/'}
+2022-02-17 15:11:08 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Dr-Seuss/> from <GET https://quotes.toscrape.com/author/Dr-Seuss>
+2022-02-17 15:11:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Dr-Seuss/> (referer: None)
+2022-02-17 15:11:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/wisdom/page/1/> (referer: https://quotes.toscrape.com/tag/learning/page/1/)
+2022-02-17 15:11:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/understanding/page/1/> (referer: https://quotes.toscrape.com/tag/learning/page/1/)
+2022-02-17 15:11:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/knowledge/page/1/> (referer: https://quotes.toscrape.com/tag/learning/page/1/)
+2022-02-17 15:11:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/reading/page/1/> (referer: https://quotes.toscrape.com/tag/reading/)
+2022-02-17 15:11:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/humor/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/humor/>
+{'link': 'https://quotes.toscrape.com/author/Garrison-Keillor'}
+2022-02-17 15:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/humor/>
+{'link': 'https://quotes.toscrape.com/tag/religion/page/1/'}
+2022-02-17 15:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/humor/>
+{'link': 'https://quotes.toscrape.com/author/Jim-Henson'}
+2022-02-17 15:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/humor/>
+{'link': 'https://quotes.toscrape.com/author/Charles-M-Schulz'}
+2022-02-17 15:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/humor/>
+{'link': 'https://quotes.toscrape.com/tag/chocolate/page/1/'}
+2022-02-17 15:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/humor/>
+{'link': 'https://quotes.toscrape.com/tag/food/page/1/'}
+2022-02-17 15:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/humor/>
+{'link': 'https://quotes.toscrape.com/author/Suzanne-Collins'}
+2022-02-17 15:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/humor/>
+{'link': 'https://quotes.toscrape.com/author/Charles-Bukowski'}
+2022-02-17 15:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/humor/>
+{'link': 'https://quotes.toscrape.com/author/Terry-Pratchett'}
+2022-02-17 15:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/humor/>
+{'link': 'https://quotes.toscrape.com/tag/open-mind/page/1/'}
+2022-02-17 15:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/humor/>
+{'link': 'https://quotes.toscrape.com/tag/philosophy/page/1/'}
+2022-02-17 15:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/humor/>
+{'link': 'https://quotes.toscrape.com/tag/humor/page/2/'}
+2022-02-17 15:11:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/life/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/life/>
+{'link': 'https://quotes.toscrape.com/author/Douglas-Adams'}
+2022-02-17 15:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/life/>
+{'link': 'https://quotes.toscrape.com/tag/navigation/page/1/'}
+2022-02-17 15:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/life/>
+{'link': 'https://quotes.toscrape.com/author/Allen-Saunders'}
+2022-02-17 15:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/life/>
+{'link': 'https://quotes.toscrape.com/tag/fate/page/1/'}
+2022-02-17 15:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/life/>
+{'link': 'https://quotes.toscrape.com/tag/misattributed-john-lennon/page/1/'}
+2022-02-17 15:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/life/>
+{'link': 'https://quotes.toscrape.com/tag/planning/page/1/'}
+2022-02-17 15:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/life/>
+{'link': 'https://quotes.toscrape.com/tag/plans/page/1/'}
+2022-02-17 15:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/life/>
+{'link': 'https://quotes.toscrape.com/tag/comedy/page/1/'}
+2022-02-17 15:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/life/>
+{'link': 'https://quotes.toscrape.com/tag/yourself/page/1/'}
+2022-02-17 15:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/life/>
+{'link': 'https://quotes.toscrape.com/author/George-Bernard-Shaw'}
+2022-02-17 15:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/life/>
+{'link': 'https://quotes.toscrape.com/tag/yourself/page/1/'}
+2022-02-17 15:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/life/>
+{'link': 'https://quotes.toscrape.com/author/Ralph-Waldo-Emerson'}
+2022-02-17 15:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/life/>
+{'link': 'https://quotes.toscrape.com/tag/regrets/page/1/'}
+2022-02-17 15:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/life/>
+{'link': 'https://quotes.toscrape.com/tag/life/page/2/'}
+2022-02-17 15:11:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/humor/page/2/> (referer: https://quotes.toscrape.com/tag/humor/)
+2022-02-17 15:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/humor/page/2/>
+{'link': 'https://quotes.toscrape.com/author/W-C-Fields'}
+2022-02-17 15:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/humor/page/2/>
+{'link': 'https://quotes.toscrape.com/tag/sinister/page/1/'}
+2022-02-17 15:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/humor/page/2/>
+{'link': 'https://quotes.toscrape.com/tag/romantic/page/1/'}
+2022-02-17 15:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/humor/page/2/>
+{'link': 'https://quotes.toscrape.com/tag/women/page/1/'}
+2022-02-17 15:11:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/life/page/2/> (referer: https://quotes.toscrape.com/tag/life/)
+2022-02-17 15:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/life/page/2/>
+{'link': 'https://quotes.toscrape.com/tag/death/page/1/'}
+2022-02-17 15:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/life/page/2/>
+{'link': 'https://quotes.toscrape.com/author/Jimi-Hendrix'}
+2022-02-17 15:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/life/page/2/>
+{'link': 'https://quotes.toscrape.com/tag/death/page/1/'}
+2022-02-17 15:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/life/page/2/>
+{'link': 'https://quotes.toscrape.com/author/Khaled-Hosseini'}
+2022-02-17 15:11:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/women/page/1/> (referer: https://quotes.toscrape.com/tag/humor/page/2/)
+2022-02-17 15:11:09 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Khaled-Hosseini/> from <GET https://quotes.toscrape.com/author/Khaled-Hosseini>
+2022-02-17 15:11:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Khaled-Hosseini/> (referer: None)
+2022-02-17 15:11:10 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Jimi-Hendrix/> from <GET https://quotes.toscrape.com/author/Jimi-Hendrix>
+2022-02-17 15:11:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Jimi-Hendrix/> (referer: None)
+2022-02-17 15:11:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/death/page/1/> (referer: https://quotes.toscrape.com/tag/life/page/2/)
+2022-02-17 15:11:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/romantic/page/1/> (referer: https://quotes.toscrape.com/tag/humor/page/2/)
+2022-02-17 15:11:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/sinister/page/1/> (referer: https://quotes.toscrape.com/tag/humor/page/2/)
+2022-02-17 15:11:11 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/W-C-Fields/> from <GET https://quotes.toscrape.com/author/W-C-Fields>
+2022-02-17 15:11:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/W-C-Fields/> (referer: None)
+2022-02-17 15:11:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/regrets/page/1/> (referer: https://quotes.toscrape.com/tag/life/)
+2022-02-17 15:11:11 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Ralph-Waldo-Emerson/> from <GET https://quotes.toscrape.com/author/Ralph-Waldo-Emerson>
+2022-02-17 15:11:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Ralph-Waldo-Emerson/> (referer: None)
+2022-02-17 15:11:12 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/George-Bernard-Shaw/> from <GET https://quotes.toscrape.com/author/George-Bernard-Shaw>
+2022-02-17 15:11:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/George-Bernard-Shaw/> (referer: None)
+2022-02-17 15:11:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/yourself/page/1/> (referer: https://quotes.toscrape.com/tag/life/)
+2022-02-17 15:11:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/comedy/page/1/> (referer: https://quotes.toscrape.com/tag/life/)
+2022-02-17 15:11:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/plans/page/1/> (referer: https://quotes.toscrape.com/tag/life/)
+2022-02-17 15:11:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/planning/page/1/> (referer: https://quotes.toscrape.com/tag/life/)
+2022-02-17 15:11:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/misattributed-john-lennon/page/1/> (referer: https://quotes.toscrape.com/tag/life/)
+2022-02-17 15:11:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/fate/page/1/> (referer: https://quotes.toscrape.com/tag/life/)
+2022-02-17 15:11:13 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Allen-Saunders/> from <GET https://quotes.toscrape.com/author/Allen-Saunders>
+2022-02-17 15:11:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Allen-Saunders/> (referer: None)
+2022-02-17 15:11:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/navigation/page/1/> (referer: https://quotes.toscrape.com/tag/life/)
+2022-02-17 15:11:13 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Douglas-Adams/> from <GET https://quotes.toscrape.com/author/Douglas-Adams>
+2022-02-17 15:11:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Douglas-Adams/> (referer: None)
+2022-02-17 15:11:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/philosophy/page/1/> (referer: https://quotes.toscrape.com/tag/humor/)
+2022-02-17 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/philosophy/page/1/>
+{'link': 'https://quotes.toscrape.com/author/Elie-Wiesel'}
+2022-02-17 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/philosophy/page/1/>
+{'link': 'https://quotes.toscrape.com/tag/activism/page/1/'}
+2022-02-17 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/philosophy/page/1/>
+{'link': 'https://quotes.toscrape.com/tag/apathy/page/1/'}
+2022-02-17 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/philosophy/page/1/>
+{'link': 'https://quotes.toscrape.com/tag/hate/page/1/'}
+2022-02-17 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/philosophy/page/1/>
+{'link': 'https://quotes.toscrape.com/tag/indifference/page/1/'}
+2022-02-17 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/philosophy/page/1/>
+{'link': 'https://quotes.toscrape.com/tag/opposite/page/1/'}
+2022-02-17 15:11:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/open-mind/page/1/> (referer: https://quotes.toscrape.com/tag/humor/)
+2022-02-17 15:11:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/opposite/page/1/> (referer: https://quotes.toscrape.com/tag/philosophy/page/1/)
+2022-02-17 15:11:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/indifference/page/1/> (referer: https://quotes.toscrape.com/tag/philosophy/page/1/)
+2022-02-17 15:11:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/hate/page/1/> (referer: https://quotes.toscrape.com/tag/philosophy/page/1/)
+2022-02-17 15:11:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/apathy/page/1/> (referer: https://quotes.toscrape.com/tag/philosophy/page/1/)
+2022-02-17 15:11:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/activism/page/1/> (referer: https://quotes.toscrape.com/tag/philosophy/page/1/)
+2022-02-17 15:11:15 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Elie-Wiesel/> from <GET https://quotes.toscrape.com/author/Elie-Wiesel>
+2022-02-17 15:11:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Elie-Wiesel/> (referer: None)
+2022-02-17 15:11:16 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Terry-Pratchett/> from <GET https://quotes.toscrape.com/author/Terry-Pratchett>
+2022-02-17 15:11:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Terry-Pratchett/> (referer: None)
+2022-02-17 15:11:16 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Charles-Bukowski/> from <GET https://quotes.toscrape.com/author/Charles-Bukowski>
+2022-02-17 15:11:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Charles-Bukowski/> (referer: None)
+2022-02-17 15:11:17 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Suzanne-Collins/> from <GET https://quotes.toscrape.com/author/Suzanne-Collins>
+2022-02-17 15:11:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Suzanne-Collins/> (referer: None)
+2022-02-17 15:11:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/food/page/1/> (referer: https://quotes.toscrape.com/tag/humor/)
+2022-02-17 15:11:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/chocolate/page/1/> (referer: https://quotes.toscrape.com/tag/humor/)
+2022-02-17 15:11:17 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Charles-M-Schulz/> from <GET https://quotes.toscrape.com/author/Charles-M-Schulz>
+2022-02-17 15:11:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Charles-M-Schulz/> (referer: None)
+2022-02-17 15:11:18 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Jim-Henson/> from <GET https://quotes.toscrape.com/author/Jim-Henson>
+2022-02-17 15:11:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Jim-Henson/> (referer: None)
+2022-02-17 15:11:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/religion/page/1/> (referer: https://quotes.toscrape.com/tag/humor/)
+2022-02-17 15:11:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/religion/page/1/>
+{'link': 'https://quotes.toscrape.com/tag/christianity/page/1/'}
+2022-02-17 15:11:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/religion/page/1/>
+{'link': 'https://quotes.toscrape.com/tag/faith/page/1/'}
+2022-02-17 15:11:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/religion/page/1/>
+{'link': 'https://quotes.toscrape.com/tag/sun/page/1/'}
+2022-02-17 15:11:18 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Garrison-Keillor/> from <GET https://quotes.toscrape.com/author/Garrison-Keillor>
+2022-02-17 15:11:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Garrison-Keillor/> (referer: None)
+2022-02-17 15:11:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/sun/page/1/> (referer: https://quotes.toscrape.com/tag/religion/page/1/)
+2022-02-17 15:11:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/faith/page/1/> (referer: https://quotes.toscrape.com/tag/religion/page/1/)
+2022-02-17 15:11:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/christianity/page/1/> (referer: https://quotes.toscrape.com/tag/religion/page/1/)
+2022-02-17 15:11:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/inspirational/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/inspirational/>
+{'link': 'https://quotes.toscrape.com/author/George-Eliot'}
+2022-02-17 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/inspirational/>
+{'link': 'https://quotes.toscrape.com/author/Martin-Luther-King-Jr'}
+2022-02-17 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/inspirational/>
+{'link': 'https://quotes.toscrape.com/tag/hope/page/1/'}
+2022-02-17 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/inspirational/>
+{'link': 'https://quotes.toscrape.com/author/Helen-Keller'}
+2022-02-17 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/inspirational/>
+{'link': 'https://quotes.toscrape.com/tag/inspirational/page/2/'}
+2022-02-17 15:11:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/love/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/love/>
+{'link': 'https://quotes.toscrape.com/author/Pablo-Neruda'}
+2022-02-17 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/love/>
+{'link': 'https://quotes.toscrape.com/tag/poetry/page/1/'}
+2022-02-17 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/love/>
+{'link': 'https://quotes.toscrape.com/tag/girls/page/1/'}
+2022-02-17 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/love/>
+{'link': 'https://quotes.toscrape.com/author/James-Baldwin'}
+2022-02-17 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/love/>
+{'link': 'https://quotes.toscrape.com/tag/love/page/2/'}
+2022-02-17 15:11:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/inspirational/page/2/> (referer: https://quotes.toscrape.com/tag/inspirational/)
+2022-02-17 15:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/inspirational/page/2/>
+{'link': 'https://quotes.toscrape.com/author/John-Lennon'}
+2022-02-17 15:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/inspirational/page/2/>
+{'link': 'https://quotes.toscrape.com/tag/beatles/page/1/'}
+2022-02-17 15:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/inspirational/page/2/>
+{'link': 'https://quotes.toscrape.com/tag/connection/page/1/'}
+2022-02-17 15:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/inspirational/page/2/>
+{'link': 'https://quotes.toscrape.com/tag/dreamers/page/1/'}
+2022-02-17 15:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/inspirational/page/2/>
+{'link': 'https://quotes.toscrape.com/tag/dreaming/page/1/'}
+2022-02-17 15:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/inspirational/page/2/>
+{'link': 'https://quotes.toscrape.com/tag/dreams/page/1/'}
+2022-02-17 15:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/inspirational/page/2/>
+{'link': 'https://quotes.toscrape.com/tag/peace/page/1/'}
+2022-02-17 15:11:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/love/page/2/> (referer: https://quotes.toscrape.com/tag/love/)
+2022-02-17 15:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/love/page/2/>
+{'link': 'https://quotes.toscrape.com/author/J-M-Barrie'}
+2022-02-17 15:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/tag/love/page/2/>
+{'link': 'https://quotes.toscrape.com/tag/adventure/page/1/'}
+2022-02-17 15:11:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/peace/page/1/> (referer: https://quotes.toscrape.com/tag/inspirational/page/2/)
+2022-02-17 15:11:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/adventure/page/1/> (referer: https://quotes.toscrape.com/tag/love/page/2/)
+2022-02-17 15:11:20 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/J-M-Barrie/> from <GET https://quotes.toscrape.com/author/J-M-Barrie>
+2022-02-17 15:11:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/J-M-Barrie/> (referer: None)
+2022-02-17 15:11:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/dreams/page/1/> (referer: https://quotes.toscrape.com/tag/inspirational/page/2/)
+2022-02-17 15:11:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/dreaming/page/1/> (referer: https://quotes.toscrape.com/tag/inspirational/page/2/)
+2022-02-17 15:11:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/dreamers/page/1/> (referer: https://quotes.toscrape.com/tag/inspirational/page/2/)
+2022-02-17 15:11:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/connection/page/1/> (referer: https://quotes.toscrape.com/tag/inspirational/page/2/)
+2022-02-17 15:11:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/beatles/page/1/> (referer: https://quotes.toscrape.com/tag/inspirational/page/2/)
+2022-02-17 15:11:21 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/John-Lennon/> from <GET https://quotes.toscrape.com/author/John-Lennon>
+2022-02-17 15:11:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/John-Lennon/> (referer: None)
+2022-02-17 15:11:22 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/James-Baldwin/> from <GET https://quotes.toscrape.com/author/James-Baldwin>
+2022-02-17 15:11:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/James-Baldwin/> (referer: None)
+2022-02-17 15:11:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/girls/page/1/> (referer: https://quotes.toscrape.com/tag/love/)
+2022-02-17 15:11:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/poetry/page/1/> (referer: https://quotes.toscrape.com/tag/love/)
+2022-02-17 15:11:22 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Pablo-Neruda/> from <GET https://quotes.toscrape.com/author/Pablo-Neruda>
+2022-02-17 15:11:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Pablo-Neruda/> (referer: None)
+2022-02-17 15:11:23 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Helen-Keller/> from <GET https://quotes.toscrape.com/author/Helen-Keller>
+2022-02-17 15:11:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Helen-Keller/> (referer: None)
+2022-02-17 15:11:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/hope/page/1/> (referer: https://quotes.toscrape.com/tag/inspirational/)
+2022-02-17 15:11:23 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Martin-Luther-King-Jr/> from <GET https://quotes.toscrape.com/author/Martin-Luther-King-Jr>
+2022-02-17 15:11:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Martin-Luther-King-Jr/> (referer: None)
+2022-02-17 15:11:24 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/George-Eliot/> from <GET https://quotes.toscrape.com/author/George-Eliot>
+2022-02-17 15:11:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/George-Eliot/> (referer: None)
+2022-02-17 15:11:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/page/2/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:11:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/2/>
+{'link': 'https://quotes.toscrape.com/tag/simplicity/page/1/'}
+2022-02-17 15:11:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/2/>
+{'link': 'https://quotes.toscrape.com/tag/understand/page/1/'}
+2022-02-17 15:11:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/2/>
+{'link': 'https://quotes.toscrape.com/tag/fantasy/page/1/'}
+2022-02-17 15:11:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/2/>
+{'link': 'https://quotes.toscrape.com/page/1/'}
+2022-02-17 15:11:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/2/>
+{'link': 'https://quotes.toscrape.com/page/3/'}
+2022-02-17 15:11:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/simile/page/1/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:11:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/page/3/> (referer: https://quotes.toscrape.com/page/2/)
+2022-02-17 15:11:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/3/>
+{'link': 'https://quotes.toscrape.com/tag/happiness/page/1/'}
+2022-02-17 15:11:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/3/>
+{'link': 'https://quotes.toscrape.com/author/Mother-Teresa'}
+2022-02-17 15:11:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/3/>
+{'link': 'https://quotes.toscrape.com/tag/attributed-no-source/page/1/'}
+2022-02-17 15:11:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/3/>
+{'link': 'https://quotes.toscrape.com/tag/imagination/page/1/'}
+2022-02-17 15:11:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/3/>
+{'link': 'https://quotes.toscrape.com/tag/music/page/1/'}
+2022-02-17 15:11:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/3/>
+{'link': 'https://quotes.toscrape.com/page/4/'}
+2022-02-17 15:11:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/page/1/> (referer: https://quotes.toscrape.com/page/2/)
+2022-02-17 15:11:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/page/4/> (referer: https://quotes.toscrape.com/page/3/)
+2022-02-17 15:11:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/4/>
+{'link': 'https://quotes.toscrape.com/tag/dumbledore/page/1/'}
+2022-02-17 15:11:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/4/>
+{'link': 'https://quotes.toscrape.com/tag/misattributed-to-mother-teresa/page/1/'}
+2022-02-17 15:11:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/4/>
+{'link': 'https://quotes.toscrape.com/page/5/'}
+2022-02-17 15:11:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/music/page/1/> (referer: https://quotes.toscrape.com/page/3/)
+2022-02-17 15:11:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/page/5/> (referer: https://quotes.toscrape.com/page/4/)
+2022-02-17 15:11:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/5/>
+{'link': 'https://quotes.toscrape.com/page/6/'}
+2022-02-17 15:11:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/misattributed-to-mother-teresa/page/1/> (referer: https://quotes.toscrape.com/page/4/)
+2022-02-17 15:11:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/page/6/> (referer: https://quotes.toscrape.com/page/5/)
+2022-02-17 15:11:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/6/>
+{'link': 'https://quotes.toscrape.com/tag/attributed/page/1/'}
+2022-02-17 15:11:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/6/>
+{'link': 'https://quotes.toscrape.com/tag/fear/page/1/'}
+2022-02-17 15:11:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/6/>
+{'link': 'https://quotes.toscrape.com/tag/inspiration/page/1/'}
+2022-02-17 15:11:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/6/>
+{'link': 'https://quotes.toscrape.com/author/Alexandre-Dumas-fils'}
+2022-02-17 15:11:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/6/>
+{'link': 'https://quotes.toscrape.com/tag/misattributed-to-einstein/page/1/'}
+2022-02-17 15:11:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/6/>
+{'link': 'https://quotes.toscrape.com/page/7/'}
+2022-02-17 15:11:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/dumbledore/page/1/> (referer: https://quotes.toscrape.com/page/4/)
+2022-02-17 15:11:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/page/7/> (referer: https://quotes.toscrape.com/page/6/)
+2022-02-17 15:11:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/7/>
+{'link': 'https://quotes.toscrape.com/tag/alcohol/page/1/'}
+2022-02-17 15:11:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/7/>
+{'link': 'https://quotes.toscrape.com/tag/the-hunger-games/page/1/'}
+2022-02-17 15:11:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/7/>
+{'link': 'https://quotes.toscrape.com/author/J-R-R-Tolkien'}
+2022-02-17 15:11:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/7/>
+{'link': 'https://quotes.toscrape.com/tag/bilbo/page/1/'}
+2022-02-17 15:11:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/7/>
+{'link': 'https://quotes.toscrape.com/tag/journey/page/1/'}
+2022-02-17 15:11:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/7/>
+{'link': 'https://quotes.toscrape.com/tag/lost/page/1/'}
+2022-02-17 15:11:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/7/>
+{'link': 'https://quotes.toscrape.com/tag/quest/page/1/'}
+2022-02-17 15:11:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/7/>
+{'link': 'https://quotes.toscrape.com/tag/travel/page/1/'}
+2022-02-17 15:11:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/7/>
+{'link': 'https://quotes.toscrape.com/tag/wander/page/1/'}
+2022-02-17 15:11:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/7/>
+{'link': 'https://quotes.toscrape.com/tag/live-death-love/page/1/'}
+2022-02-17 15:11:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/7/>
+{'link': 'https://quotes.toscrape.com/tag/education/page/1/'}
+2022-02-17 15:11:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/7/>
+{'link': 'https://quotes.toscrape.com/tag/troubles/page/1/'}
+2022-02-17 15:11:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/7/>
+{'link': 'https://quotes.toscrape.com/page/8/'}
+2022-02-17 15:11:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/misattributed-to-einstein/page/1/> (referer: https://quotes.toscrape.com/page/6/)
+2022-02-17 15:11:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/page/8/> (referer: https://quotes.toscrape.com/page/7/)
+2022-02-17 15:11:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/8/>
+{'link': 'https://quotes.toscrape.com/author/Ayn-Rand'}
+2022-02-17 15:11:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/8/>
+{'link': 'https://quotes.toscrape.com/page/9/'}
+2022-02-17 15:11:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/troubles/page/1/> (referer: https://quotes.toscrape.com/page/7/)
+2022-02-17 15:11:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/page/9/> (referer: https://quotes.toscrape.com/page/8/)
+2022-02-17 15:11:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/9/>
+{'link': 'https://quotes.toscrape.com/tag/mistakes/page/1/'}
+2022-02-17 15:11:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/9/>
+{'link': 'https://quotes.toscrape.com/tag/integrity/page/1/'}
+2022-02-17 15:11:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/9/>
+{'link': 'https://quotes.toscrape.com/tag/elizabeth-bennet/page/1/'}
+2022-02-17 15:11:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/9/>
+{'link': 'https://quotes.toscrape.com/tag/jane-austen/page/1/'}
+2022-02-17 15:11:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/9/>
+{'link': 'https://quotes.toscrape.com/tag/age/page/1/'}
+2022-02-17 15:11:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/9/>
+{'link': 'https://quotes.toscrape.com/tag/fairytales/page/1/'}
+2022-02-17 15:11:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/9/>
+{'link': 'https://quotes.toscrape.com/tag/growing-up/page/1/'}
+2022-02-17 15:11:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/9/>
+{'link': 'https://quotes.toscrape.com/tag/god/page/1/'}
+2022-02-17 15:11:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/9/>
+{'link': 'https://quotes.toscrape.com/page/10/'}
+2022-02-17 15:11:27 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Ayn-Rand/> from <GET https://quotes.toscrape.com/author/Ayn-Rand>
+2022-02-17 15:11:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Ayn-Rand/> (referer: None)
+2022-02-17 15:11:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/page/10/> (referer: https://quotes.toscrape.com/page/9/)
+2022-02-17 15:11:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/10/>
+{'link': 'https://quotes.toscrape.com/author/Harper-Lee'}
+2022-02-17 15:11:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/10/>
+{'link': 'https://quotes.toscrape.com/tag/better-life-empathy/page/1/'}
+2022-02-17 15:11:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/god/page/1/> (referer: https://quotes.toscrape.com/page/9/)
+2022-02-17 15:11:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/better-life-empathy/page/1/> (referer: https://quotes.toscrape.com/page/10/)
+2022-02-17 15:11:27 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Harper-Lee/> from <GET https://quotes.toscrape.com/author/Harper-Lee>
+2022-02-17 15:11:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Harper-Lee/> (referer: None)
+2022-02-17 15:11:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/growing-up/page/1/> (referer: https://quotes.toscrape.com/page/9/)
+2022-02-17 15:11:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/fairytales/page/1/> (referer: https://quotes.toscrape.com/page/9/)
+2022-02-17 15:11:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/age/page/1/> (referer: https://quotes.toscrape.com/page/9/)
+2022-02-17 15:11:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/jane-austen/page/1/> (referer: https://quotes.toscrape.com/page/9/)
+2022-02-17 15:11:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/elizabeth-bennet/page/1/> (referer: https://quotes.toscrape.com/page/9/)
+2022-02-17 15:11:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/integrity/page/1/> (referer: https://quotes.toscrape.com/page/9/)
+2022-02-17 15:11:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/mistakes/page/1/> (referer: https://quotes.toscrape.com/page/9/)
+2022-02-17 15:11:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/education/page/1/> (referer: https://quotes.toscrape.com/page/7/)
+2022-02-17 15:11:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/live-death-love/page/1/> (referer: https://quotes.toscrape.com/page/7/)
+2022-02-17 15:11:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/wander/page/1/> (referer: https://quotes.toscrape.com/page/7/)
+2022-02-17 15:11:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/travel/page/1/> (referer: https://quotes.toscrape.com/page/7/)
+2022-02-17 15:11:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/quest/page/1/> (referer: https://quotes.toscrape.com/page/7/)
+2022-02-17 15:11:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/lost/page/1/> (referer: https://quotes.toscrape.com/page/7/)
+2022-02-17 15:11:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/journey/page/1/> (referer: https://quotes.toscrape.com/page/7/)
+2022-02-17 15:11:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/bilbo/page/1/> (referer: https://quotes.toscrape.com/page/7/)
+2022-02-17 15:11:30 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/J-R-R-Tolkien/> from <GET https://quotes.toscrape.com/author/J-R-R-Tolkien>
+2022-02-17 15:11:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/J-R-R-Tolkien/> (referer: None)
+2022-02-17 15:11:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/the-hunger-games/page/1/> (referer: https://quotes.toscrape.com/page/7/)
+2022-02-17 15:11:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/alcohol/page/1/> (referer: https://quotes.toscrape.com/page/7/)
+2022-02-17 15:11:31 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Alexandre-Dumas-fils/> from <GET https://quotes.toscrape.com/author/Alexandre-Dumas-fils>
+2022-02-17 15:11:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Alexandre-Dumas-fils/> (referer: None)
+2022-02-17 15:11:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/inspiration/page/1/> (referer: https://quotes.toscrape.com/page/6/)
+2022-02-17 15:11:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/fear/page/1/> (referer: https://quotes.toscrape.com/page/6/)
+2022-02-17 15:11:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/attributed/page/1/> (referer: https://quotes.toscrape.com/page/6/)
+2022-02-17 15:11:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/imagination/page/1/> (referer: https://quotes.toscrape.com/page/3/)
+2022-02-17 15:11:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/attributed-no-source/page/1/> (referer: https://quotes.toscrape.com/page/3/)
+2022-02-17 15:11:32 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Mother-Teresa/> from <GET https://quotes.toscrape.com/author/Mother-Teresa>
+2022-02-17 15:11:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Mother-Teresa/> (referer: None)
+2022-02-17 15:11:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/happiness/page/1/> (referer: https://quotes.toscrape.com/page/3/)
+2022-02-17 15:11:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/fantasy/page/1/> (referer: https://quotes.toscrape.com/page/2/)
+2022-02-17 15:11:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/understand/page/1/> (referer: https://quotes.toscrape.com/page/2/)
+2022-02-17 15:11:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/simplicity/page/1/> (referer: https://quotes.toscrape.com/page/2/)
+2022-02-17 15:11:33 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Steve-Martin/> from <GET https://quotes.toscrape.com/author/Steve-Martin>
+2022-02-17 15:11:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Steve-Martin/> (referer: None)
+2022-02-17 15:11:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/misattributed-eleanor-roosevelt/page/1/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:11:33 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Eleanor-Roosevelt/> from <GET https://quotes.toscrape.com/author/Eleanor-Roosevelt>
+2022-02-17 15:11:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Eleanor-Roosevelt/> (referer: None)
+2022-02-17 15:11:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/paraphrased/page/1/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:11:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/failure/page/1/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:11:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/edison/page/1/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:11:34 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Thomas-A-Edison/> from <GET https://quotes.toscrape.com/author/Thomas-A-Edison>
+2022-02-17 15:11:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Thomas-A-Edison/> (referer: None)
+2022-02-17 15:11:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/love/page/1/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:11:35 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Andre-Gide/> from <GET https://quotes.toscrape.com/author/Andre-Gide>
+2022-02-17 15:11:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Andre-Gide/> (referer: None)
+2022-02-17 15:11:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/value/page/1/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:11:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/success/page/1/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:11:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/adulthood/page/1/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:11:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/be-yourself/page/1/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:11:36 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Marilyn-Monroe/> from <GET https://quotes.toscrape.com/author/Marilyn-Monroe>
+2022-02-17 15:11:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Marilyn-Monroe/> (referer: None)
+2022-02-17 15:11:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/humor/page/1/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:11:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/classic/page/1/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:11:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/books/page/1/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:11:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/aliteracy/page/1/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:11:37 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Jane-Austen/> from <GET https://quotes.toscrape.com/author/Jane-Austen>
+2022-02-17 15:11:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Jane-Austen/> (referer: None)
+2022-02-17 15:11:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/miracles/page/1/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:11:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/miracle/page/1/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:11:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/live/page/1/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:11:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/life/page/1/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:11:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/inspirational/page/1/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:11:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/choices/page/1/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:11:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/abilities/page/1/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:11:39 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/J-K-Rowling/> from <GET https://quotes.toscrape.com/author/J-K-Rowling>
+2022-02-17 15:11:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/J-K-Rowling/> (referer: None)
+2022-02-17 15:11:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/world/page/1/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:11:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/thinking/page/1/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:11:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/deep-thoughts/page/1/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:11:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/tag/change/page/1/> (referer: https://quotes.toscrape.com/)
+2022-02-17 15:11:40 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Albert-Einstein/> from <GET https://quotes.toscrape.com/author/Albert-Einstein>
+2022-02-17 15:11:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Albert-Einstein/> (referer: None)
+2022-02-17 15:11:40 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-02-17 15:11:40 [scrapy.extensions.feedexport] INFO: Stored csv feed (238 items) in: results_toscrape_withoutLogin.csv
+2022-02-17 15:11:40 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 111895,
+ 'downloader/request_count': 265,
+ 'downloader/request_method_count/GET': 265,
+ 'downloader/response_bytes': 353773,
+ 'downloader/response_count': 265,
+ 'downloader/response_status_count/200': 215,
+ 'downloader/response_status_count/308': 50,
+ 'dupefilter/filtered': 24,
+ 'elapsed_time_seconds': 52.669471,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 2, 17, 14, 11, 40, 830066),
+ 'httpcompression/response_bytes': 1014776,
+ 'httpcompression/response_count': 215,
+ 'item_scraped_count': 238,
+ 'log_count/DEBUG': 504,
+ 'log_count/INFO': 11,
+ 'request_depth_max': 11,
+ 'response_received_count': 215,
+ 'scheduler/dequeued': 265,
+ 'scheduler/dequeued/memory': 265,
+ 'scheduler/enqueued': 265,
+ 'scheduler/enqueued/memory': 265,
+ 'start_time': datetime.datetime(2022, 2, 17, 14, 10, 48, 160595)}
+2022-02-17 15:11:40 [scrapy.core.engine] INFO: Spider closed (finished)
+2022-02-17 15:11:42 [scrapy.utils.log] INFO: Scrapy 2.5.1 started (bot: crawlerWithLogin)
+2022-02-17 15:11:42 [scrapy.utils.log] INFO: Versions: lxml 4.6.4.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 21.0.0 (OpenSSL 1.1.1l  24 Aug 2021), cryptography 35.0.0, Platform Windows-10-10.0.19043-SP0
+2022-02-17 15:11:42 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-02-17 15:11:42 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'crawlerWithLogin',
+ 'CONCURRENT_REQUESTS': 1,
+ 'NEWSPIDER_MODULE': 'crawlerWithLogin.spiders',
+ 'SPIDER_MODULES': ['crawlerWithLogin.spiders']}
+2022-02-17 15:11:42 [scrapy.extensions.telnet] INFO: Telnet Password: d47d998b670c938b
+2022-02-17 15:11:42 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2022-02-17 15:11:42 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-02-17 15:11:42 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-02-17 15:11:42 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2022-02-17 15:11:42 [scrapy.core.engine] INFO: Spider opened
+2022-02-17 15:11:42 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-02-17 15:11:42 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-02-17 15:11:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/login> (referer: None)
+2022-02-17 15:11:43 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://quotes.toscrape.com/> from <POST https://quotes.toscrape.com/login>
+2022-02-17 15:11:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/> (referer: None)
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/'}
+2022-02-17 15:11:44 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://quotes.toscrape.com/> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/logout'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/author/Albert-Einstein'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/change/page/1/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/deep-thoughts/page/1/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/thinking/page/1/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/world/page/1/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/author/J-K-Rowling'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/abilities/page/1/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/choices/page/1/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/author/Albert-Einstein'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/inspirational/page/1/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/life/page/1/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/live/page/1/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/miracle/page/1/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/miracles/page/1/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/author/Jane-Austen'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/aliteracy/page/1/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/books/page/1/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/classic/page/1/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/humor/page/1/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/author/Marilyn-Monroe'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/be-yourself/page/1/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/inspirational/page/1/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/author/Albert-Einstein'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/adulthood/page/1/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/success/page/1/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/value/page/1/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/author/Andre-Gide'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/life/page/1/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/love/page/1/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/author/Thomas-A-Edison'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/edison/page/1/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/failure/page/1/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/inspirational/page/1/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/paraphrased/page/1/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/author/Eleanor-Roosevelt'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/misattributed-eleanor-roosevelt/page/1/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/author/Steve-Martin'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/humor/page/1/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/obvious/page/1/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/simile/page/1/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/page/2/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/love/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/inspirational/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/life/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/humor/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/books/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/reading/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/friendship/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/friends/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/truth/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/>
+{'link': 'http://quotes.toscrape.com/tag/simile/'}
+2022-02-17 15:11:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/change/page/1/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:11:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/simile/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/simile/>
+{'link': 'http://quotes.toscrape.com/author/Stephenie-Meyer'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/simile/>
+{'link': 'http://quotes.toscrape.com/tag/drug/page/1/'}
+2022-02-17 15:11:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/simile/>
+{'link': 'http://quotes.toscrape.com/tag/romance/page/1/'}
+2022-02-17 15:11:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/truth/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:11:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/truth/>
+{'link': 'http://quotes.toscrape.com/tag/truth/page/1/'}
+2022-02-17 15:11:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/truth/>
+{'link': 'http://quotes.toscrape.com/author/George-Carlin'}
+2022-02-17 15:11:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/truth/>
+{'link': 'http://quotes.toscrape.com/tag/insanity/page/1/'}
+2022-02-17 15:11:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/truth/>
+{'link': 'http://quotes.toscrape.com/tag/lies/page/1/'}
+2022-02-17 15:11:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/truth/>
+{'link': 'http://quotes.toscrape.com/tag/lying/page/1/'}
+2022-02-17 15:11:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/truth/>
+{'link': 'http://quotes.toscrape.com/tag/self-indulgence/page/1/'}
+2022-02-17 15:11:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/truth/>
+{'link': 'http://quotes.toscrape.com/tag/truth/page/1/'}
+2022-02-17 15:11:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/truth/>
+{'link': 'http://quotes.toscrape.com/author/Mark-Twain'}
+2022-02-17 15:11:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/truth/>
+{'link': 'http://quotes.toscrape.com/tag/misattributed-mark-twain/page/1/'}
+2022-02-17 15:11:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/truth/>
+{'link': 'http://quotes.toscrape.com/tag/truth/page/1/'}
+2022-02-17 15:11:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/truth/>
+{'link': 'http://quotes.toscrape.com/tag/truth/page/1/'}
+2022-02-17 15:11:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/truth/>
+{'link': 'http://quotes.toscrape.com/author/Mark-Twain'}
+2022-02-17 15:11:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/truth/>
+{'link': 'http://quotes.toscrape.com/tag/truth/page/1/'}
+2022-02-17 15:11:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/romance/page/1/> (referer: http://quotes.toscrape.com/tag/simile/)
+2022-02-17 15:11:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/misattributed-mark-twain/page/1/> (referer: http://quotes.toscrape.com/tag/truth/)
+2022-02-17 15:11:45 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Mark-Twain/> from <GET http://quotes.toscrape.com/author/Mark-Twain>
+2022-02-17 15:11:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Mark-Twain/> (referer: http://quotes.toscrape.com/tag/truth/)
+2022-02-17 15:11:46 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/author/Mark-Twain/>
+{'link': 'http://quotes.toscrape.com/login'}
+2022-02-17 15:11:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/self-indulgence/page/1/> (referer: http://quotes.toscrape.com/tag/truth/)
+2022-02-17 15:11:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/login> (referer: http://quotes.toscrape.com/author/Mark-Twain/)
+2022-02-17 15:11:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/lying/page/1/> (referer: http://quotes.toscrape.com/tag/truth/)
+2022-02-17 15:11:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/lies/page/1/> (referer: http://quotes.toscrape.com/tag/truth/)
+2022-02-17 15:11:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/insanity/page/1/> (referer: http://quotes.toscrape.com/tag/truth/)
+2022-02-17 15:11:47 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/George-Carlin/> from <GET http://quotes.toscrape.com/author/George-Carlin>
+2022-02-17 15:11:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/George-Carlin/> (referer: http://quotes.toscrape.com/tag/truth/)
+2022-02-17 15:11:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/truth/page/1/> (referer: http://quotes.toscrape.com/tag/truth/)
+2022-02-17 15:11:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/drug/page/1/> (referer: http://quotes.toscrape.com/tag/simile/)
+2022-02-17 15:11:48 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Stephenie-Meyer/> from <GET http://quotes.toscrape.com/author/Stephenie-Meyer>
+2022-02-17 15:11:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Stephenie-Meyer/> (referer: http://quotes.toscrape.com/tag/simile/)
+2022-02-17 15:11:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/friends/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:11:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/friends/>
+{'link': 'http://quotes.toscrape.com/tag/friends/page/1/'}
+2022-02-17 15:11:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/friends/>
+{'link': 'http://quotes.toscrape.com/tag/friends/page/1/'}
+2022-02-17 15:11:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/friends/>
+{'link': 'http://quotes.toscrape.com/tag/heartbreak/page/1/'}
+2022-02-17 15:11:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/friends/>
+{'link': 'http://quotes.toscrape.com/tag/sisters/page/1/'}
+2022-02-17 15:11:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/friends/>
+{'link': 'http://quotes.toscrape.com/tag/courage/page/1/'}
+2022-02-17 15:11:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/friends/>
+{'link': 'http://quotes.toscrape.com/tag/friends/page/1/'}
+2022-02-17 15:11:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/friends/>
+{'link': 'http://quotes.toscrape.com/tag/contentment/page/1/'}
+2022-02-17 15:11:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/friends/>
+{'link': 'http://quotes.toscrape.com/tag/friends/page/1/'}
+2022-02-17 15:11:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/friends/>
+{'link': 'http://quotes.toscrape.com/tag/friendship/page/1/'}
+2022-02-17 15:11:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/friends/>
+{'link': 'http://quotes.toscrape.com/author/Ernest-Hemingway'}
+2022-02-17 15:11:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/friends/>
+{'link': 'http://quotes.toscrape.com/tag/friends/page/1/'}
+2022-02-17 15:11:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/friends/>
+{'link': 'http://quotes.toscrape.com/tag/novelist-quotes/page/1/'}
+2022-02-17 15:11:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/friendship/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:11:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/friendship/>
+{'link': 'http://quotes.toscrape.com/author/Friedrich-Nietzsche'}
+2022-02-17 15:11:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/friendship/>
+{'link': 'http://quotes.toscrape.com/tag/lack-of-friendship/page/1/'}
+2022-02-17 15:11:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/friendship/>
+{'link': 'http://quotes.toscrape.com/tag/lack-of-love/page/1/'}
+2022-02-17 15:11:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/friendship/>
+{'link': 'http://quotes.toscrape.com/tag/marriage/page/1/'}
+2022-02-17 15:11:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/friendship/>
+{'link': 'http://quotes.toscrape.com/tag/unhappy-marriage/page/1/'}
+2022-02-17 15:11:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/friendship/>
+{'link': 'http://quotes.toscrape.com/author/Bob-Marley'}
+2022-02-17 15:11:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/friendship/>
+{'link': 'http://quotes.toscrape.com/author/Alfred-Tennyson'}
+2022-02-17 15:11:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/novelist-quotes/page/1/> (referer: http://quotes.toscrape.com/tag/friends/)
+2022-02-17 15:11:49 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Alfred-Tennyson/> from <GET http://quotes.toscrape.com/author/Alfred-Tennyson>
+2022-02-17 15:11:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Alfred-Tennyson/> (referer: http://quotes.toscrape.com/tag/friendship/)
+2022-02-17 15:11:49 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Bob-Marley/> from <GET http://quotes.toscrape.com/author/Bob-Marley>
+2022-02-17 15:11:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Bob-Marley/> (referer: http://quotes.toscrape.com/tag/friendship/)
+2022-02-17 15:11:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/unhappy-marriage/page/1/> (referer: http://quotes.toscrape.com/tag/friendship/)
+2022-02-17 15:11:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/marriage/page/1/> (referer: http://quotes.toscrape.com/tag/friendship/)
+2022-02-17 15:11:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/lack-of-love/page/1/> (referer: http://quotes.toscrape.com/tag/friendship/)
+2022-02-17 15:11:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/lack-of-friendship/page/1/> (referer: http://quotes.toscrape.com/tag/friendship/)
+2022-02-17 15:11:51 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Friedrich-Nietzsche/> from <GET http://quotes.toscrape.com/author/Friedrich-Nietzsche>
+2022-02-17 15:11:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Friedrich-Nietzsche/> (referer: http://quotes.toscrape.com/tag/friendship/)
+2022-02-17 15:11:51 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Ernest-Hemingway/> from <GET http://quotes.toscrape.com/author/Ernest-Hemingway>
+2022-02-17 15:11:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Ernest-Hemingway/> (referer: http://quotes.toscrape.com/tag/friends/)
+2022-02-17 15:11:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/friendship/page/1/> (referer: http://quotes.toscrape.com/tag/friends/)
+2022-02-17 15:11:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/contentment/page/1/> (referer: http://quotes.toscrape.com/tag/friends/)
+2022-02-17 15:11:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/courage/page/1/> (referer: http://quotes.toscrape.com/tag/friends/)
+2022-02-17 15:11:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/courage/page/1/>
+{'link': 'http://quotes.toscrape.com/author/E-E-Cummings'}
+2022-02-17 15:11:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/sisters/page/1/> (referer: http://quotes.toscrape.com/tag/friends/)
+2022-02-17 15:11:53 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/E-E-Cummings/> from <GET http://quotes.toscrape.com/author/E-E-Cummings>
+2022-02-17 15:11:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/E-E-Cummings/> (referer: http://quotes.toscrape.com/tag/courage/page/1/)
+2022-02-17 15:11:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/heartbreak/page/1/> (referer: http://quotes.toscrape.com/tag/friends/)
+2022-02-17 15:11:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/friends/page/1/> (referer: http://quotes.toscrape.com/tag/friends/)
+2022-02-17 15:11:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/reading/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:11:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/reading/>
+{'link': 'http://quotes.toscrape.com/tag/reading/page/1/'}
+2022-02-17 15:11:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/reading/>
+{'link': 'http://quotes.toscrape.com/author/Dr-Seuss'}
+2022-02-17 15:11:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/reading/>
+{'link': 'http://quotes.toscrape.com/tag/learning/page/1/'}
+2022-02-17 15:11:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/reading/>
+{'link': 'http://quotes.toscrape.com/tag/reading/page/1/'}
+2022-02-17 15:11:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/reading/>
+{'link': 'http://quotes.toscrape.com/tag/seuss/page/1/'}
+2022-02-17 15:11:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/reading/>
+{'link': 'http://quotes.toscrape.com/author/William-Nicholson'}
+2022-02-17 15:11:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/reading/>
+{'link': 'http://quotes.toscrape.com/tag/misattributed-to-c-s-lewis/page/1/'}
+2022-02-17 15:11:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/reading/>
+{'link': 'http://quotes.toscrape.com/tag/reading/page/1/'}
+2022-02-17 15:11:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/reading/>
+{'link': 'http://quotes.toscrape.com/author/George-R-R-Martin'}
+2022-02-17 15:11:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/reading/>
+{'link': 'http://quotes.toscrape.com/tag/read/page/1/'}
+2022-02-17 15:11:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/reading/>
+{'link': 'http://quotes.toscrape.com/tag/readers/page/1/'}
+2022-02-17 15:11:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/reading/>
+{'link': 'http://quotes.toscrape.com/tag/reading/page/1/'}
+2022-02-17 15:11:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/reading/>
+{'link': 'http://quotes.toscrape.com/tag/reading-books/page/1/'}
+2022-02-17 15:11:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/reading/>
+{'link': 'http://quotes.toscrape.com/author/C-S-Lewis'}
+2022-02-17 15:11:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/reading/>
+{'link': 'http://quotes.toscrape.com/tag/reading/page/1/'}
+2022-02-17 15:11:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/reading/>
+{'link': 'http://quotes.toscrape.com/tag/tea/page/1/'}
+2022-02-17 15:11:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/reading/>
+{'link': 'http://quotes.toscrape.com/author/J-D-Salinger'}
+2022-02-17 15:11:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/reading/>
+{'link': 'http://quotes.toscrape.com/tag/authors/page/1/'}
+2022-02-17 15:11:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/reading/>
+{'link': 'http://quotes.toscrape.com/tag/literature/page/1/'}
+2022-02-17 15:11:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/reading/>
+{'link': 'http://quotes.toscrape.com/tag/reading/page/1/'}
+2022-02-17 15:11:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/reading/>
+{'link': 'http://quotes.toscrape.com/tag/writing/page/1/'}
+2022-02-17 15:11:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/reading/>
+{'link': 'http://quotes.toscrape.com/tag/reading/page/1/'}
+2022-02-17 15:11:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/reading/>
+{'link': 'http://quotes.toscrape.com/tag/library/page/1/'}
+2022-02-17 15:11:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/reading/>
+{'link': 'http://quotes.toscrape.com/tag/reading/page/1/'}
+2022-02-17 15:11:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/books/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:11:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/books/>
+{'link': 'http://quotes.toscrape.com/author/Jorge-Luis-Borges'}
+2022-02-17 15:11:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/books/>
+{'link': 'http://quotes.toscrape.com/author/Haruki-Murakami'}
+2022-02-17 15:11:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/books/>
+{'link': 'http://quotes.toscrape.com/tag/thought/page/1/'}
+2022-02-17 15:11:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/books/>
+{'link': 'http://quotes.toscrape.com/author/Madeleine-LEngle'}
+2022-02-17 15:11:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/books/>
+{'link': 'http://quotes.toscrape.com/tag/children/page/1/'}
+2022-02-17 15:11:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/books/>
+{'link': 'http://quotes.toscrape.com/tag/difficult/page/1/'}
+2022-02-17 15:11:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/books/>
+{'link': 'http://quotes.toscrape.com/tag/grown-ups/page/1/'}
+2022-02-17 15:11:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/books/>
+{'link': 'http://quotes.toscrape.com/tag/write/page/1/'}
+2022-02-17 15:11:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/books/>
+{'link': 'http://quotes.toscrape.com/tag/writers/page/1/'}
+2022-02-17 15:11:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/books/>
+{'link': 'http://quotes.toscrape.com/tag/books/page/2/'}
+2022-02-17 15:11:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/library/page/1/> (referer: http://quotes.toscrape.com/tag/reading/)
+2022-02-17 15:11:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/books/page/2/> (referer: http://quotes.toscrape.com/tag/books/)
+2022-02-17 15:11:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/books/page/2/>
+{'link': 'http://quotes.toscrape.com/tag/mind/page/1/'}
+2022-02-17 15:11:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/writers/page/1/> (referer: http://quotes.toscrape.com/tag/books/)
+2022-02-17 15:11:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/mind/page/1/> (referer: http://quotes.toscrape.com/tag/books/page/2/)
+2022-02-17 15:11:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/write/page/1/> (referer: http://quotes.toscrape.com/tag/books/)
+2022-02-17 15:11:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/grown-ups/page/1/> (referer: http://quotes.toscrape.com/tag/books/)
+2022-02-17 15:11:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/difficult/page/1/> (referer: http://quotes.toscrape.com/tag/books/)
+2022-02-17 15:11:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/children/page/1/> (referer: http://quotes.toscrape.com/tag/books/)
+2022-02-17 15:11:57 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/children/page/1/>
+{'link': 'http://quotes.toscrape.com/tag/fairy-tales/page/1/'}
+2022-02-17 15:11:57 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Madeleine-LEngle/> from <GET http://quotes.toscrape.com/author/Madeleine-LEngle>
+2022-02-17 15:11:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Madeleine-LEngle/> (referer: http://quotes.toscrape.com/tag/books/)
+2022-02-17 15:11:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/fairy-tales/page/1/> (referer: http://quotes.toscrape.com/tag/children/page/1/)
+2022-02-17 15:11:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/thought/page/1/> (referer: http://quotes.toscrape.com/tag/books/)
+2022-02-17 15:11:59 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Haruki-Murakami/> from <GET http://quotes.toscrape.com/author/Haruki-Murakami>
+2022-02-17 15:12:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Haruki-Murakami/> (referer: http://quotes.toscrape.com/tag/books/)
+2022-02-17 15:12:00 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Jorge-Luis-Borges/> from <GET http://quotes.toscrape.com/author/Jorge-Luis-Borges>
+2022-02-17 15:12:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Jorge-Luis-Borges/> (referer: http://quotes.toscrape.com/tag/books/)
+2022-02-17 15:12:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/writing/page/1/> (referer: http://quotes.toscrape.com/tag/reading/)
+2022-02-17 15:12:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/writing/page/1/>
+{'link': 'http://quotes.toscrape.com/tag/good/page/1/'}
+2022-02-17 15:12:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/literature/page/1/> (referer: http://quotes.toscrape.com/tag/reading/)
+2022-02-17 15:12:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/good/page/1/> (referer: http://quotes.toscrape.com/tag/writing/page/1/)
+2022-02-17 15:12:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/authors/page/1/> (referer: http://quotes.toscrape.com/tag/reading/)
+2022-02-17 15:12:03 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/J-D-Salinger/> from <GET http://quotes.toscrape.com/author/J-D-Salinger>
+2022-02-17 15:12:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/J-D-Salinger/> (referer: http://quotes.toscrape.com/tag/reading/)
+2022-02-17 15:12:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/tea/page/1/> (referer: http://quotes.toscrape.com/tag/reading/)
+2022-02-17 15:12:05 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/C-S-Lewis/> from <GET http://quotes.toscrape.com/author/C-S-Lewis>
+2022-02-17 15:12:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/C-S-Lewis/> (referer: http://quotes.toscrape.com/tag/reading/)
+2022-02-17 15:12:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/reading-books/page/1/> (referer: http://quotes.toscrape.com/tag/reading/)
+2022-02-17 15:12:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/readers/page/1/> (referer: http://quotes.toscrape.com/tag/reading/)
+2022-02-17 15:12:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/read/page/1/> (referer: http://quotes.toscrape.com/tag/reading/)
+2022-02-17 15:12:08 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/George-R-R-Martin/> from <GET http://quotes.toscrape.com/author/George-R-R-Martin>
+2022-02-17 15:12:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/George-R-R-Martin/> (referer: http://quotes.toscrape.com/tag/reading/)
+2022-02-17 15:12:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/misattributed-to-c-s-lewis/page/1/> (referer: http://quotes.toscrape.com/tag/reading/)
+2022-02-17 15:12:09 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/William-Nicholson/> from <GET http://quotes.toscrape.com/author/William-Nicholson>
+2022-02-17 15:12:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/William-Nicholson/> (referer: http://quotes.toscrape.com/tag/reading/)
+2022-02-17 15:12:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/seuss/page/1/> (referer: http://quotes.toscrape.com/tag/reading/)
+2022-02-17 15:12:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/learning/page/1/> (referer: http://quotes.toscrape.com/tag/reading/)
+2022-02-17 15:12:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/learning/page/1/>
+{'link': 'http://quotes.toscrape.com/tag/knowledge/page/1/'}
+2022-02-17 15:12:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/learning/page/1/>
+{'link': 'http://quotes.toscrape.com/tag/understanding/page/1/'}
+2022-02-17 15:12:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/learning/page/1/>
+{'link': 'http://quotes.toscrape.com/tag/wisdom/page/1/'}
+2022-02-17 15:12:10 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Dr-Seuss/> from <GET http://quotes.toscrape.com/author/Dr-Seuss>
+2022-02-17 15:12:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Dr-Seuss/> (referer: http://quotes.toscrape.com/tag/reading/)
+2022-02-17 15:12:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/wisdom/page/1/> (referer: http://quotes.toscrape.com/tag/learning/page/1/)
+2022-02-17 15:12:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/understanding/page/1/> (referer: http://quotes.toscrape.com/tag/learning/page/1/)
+2022-02-17 15:12:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/knowledge/page/1/> (referer: http://quotes.toscrape.com/tag/learning/page/1/)
+2022-02-17 15:12:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/reading/page/1/> (referer: http://quotes.toscrape.com/tag/reading/)
+2022-02-17 15:12:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/humor/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/humor/>
+{'link': 'http://quotes.toscrape.com/author/Garrison-Keillor'}
+2022-02-17 15:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/humor/>
+{'link': 'http://quotes.toscrape.com/tag/religion/page/1/'}
+2022-02-17 15:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/humor/>
+{'link': 'http://quotes.toscrape.com/author/Jim-Henson'}
+2022-02-17 15:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/humor/>
+{'link': 'http://quotes.toscrape.com/author/Charles-M-Schulz'}
+2022-02-17 15:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/humor/>
+{'link': 'http://quotes.toscrape.com/tag/chocolate/page/1/'}
+2022-02-17 15:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/humor/>
+{'link': 'http://quotes.toscrape.com/tag/food/page/1/'}
+2022-02-17 15:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/humor/>
+{'link': 'http://quotes.toscrape.com/author/Suzanne-Collins'}
+2022-02-17 15:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/humor/>
+{'link': 'http://quotes.toscrape.com/author/Charles-Bukowski'}
+2022-02-17 15:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/humor/>
+{'link': 'http://quotes.toscrape.com/author/Terry-Pratchett'}
+2022-02-17 15:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/humor/>
+{'link': 'http://quotes.toscrape.com/tag/open-mind/page/1/'}
+2022-02-17 15:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/humor/>
+{'link': 'http://quotes.toscrape.com/tag/philosophy/page/1/'}
+2022-02-17 15:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/humor/>
+{'link': 'http://quotes.toscrape.com/tag/humor/page/2/'}
+2022-02-17 15:12:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/life/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/life/>
+{'link': 'http://quotes.toscrape.com/author/Douglas-Adams'}
+2022-02-17 15:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/life/>
+{'link': 'http://quotes.toscrape.com/tag/navigation/page/1/'}
+2022-02-17 15:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/life/>
+{'link': 'http://quotes.toscrape.com/author/Allen-Saunders'}
+2022-02-17 15:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/life/>
+{'link': 'http://quotes.toscrape.com/tag/fate/page/1/'}
+2022-02-17 15:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/life/>
+{'link': 'http://quotes.toscrape.com/tag/misattributed-john-lennon/page/1/'}
+2022-02-17 15:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/life/>
+{'link': 'http://quotes.toscrape.com/tag/planning/page/1/'}
+2022-02-17 15:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/life/>
+{'link': 'http://quotes.toscrape.com/tag/plans/page/1/'}
+2022-02-17 15:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/life/>
+{'link': 'http://quotes.toscrape.com/tag/comedy/page/1/'}
+2022-02-17 15:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/life/>
+{'link': 'http://quotes.toscrape.com/tag/yourself/page/1/'}
+2022-02-17 15:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/life/>
+{'link': 'http://quotes.toscrape.com/author/George-Bernard-Shaw'}
+2022-02-17 15:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/life/>
+{'link': 'http://quotes.toscrape.com/tag/yourself/page/1/'}
+2022-02-17 15:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/life/>
+{'link': 'http://quotes.toscrape.com/author/Ralph-Waldo-Emerson'}
+2022-02-17 15:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/life/>
+{'link': 'http://quotes.toscrape.com/tag/regrets/page/1/'}
+2022-02-17 15:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/life/>
+{'link': 'http://quotes.toscrape.com/tag/life/page/2/'}
+2022-02-17 15:12:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/humor/page/2/> (referer: http://quotes.toscrape.com/tag/humor/)
+2022-02-17 15:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/humor/page/2/>
+{'link': 'http://quotes.toscrape.com/author/W-C-Fields'}
+2022-02-17 15:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/humor/page/2/>
+{'link': 'http://quotes.toscrape.com/tag/sinister/page/1/'}
+2022-02-17 15:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/humor/page/2/>
+{'link': 'http://quotes.toscrape.com/tag/romantic/page/1/'}
+2022-02-17 15:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/humor/page/2/>
+{'link': 'http://quotes.toscrape.com/tag/women/page/1/'}
+2022-02-17 15:12:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/life/page/2/> (referer: http://quotes.toscrape.com/tag/life/)
+2022-02-17 15:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/life/page/2/>
+{'link': 'http://quotes.toscrape.com/tag/death/page/1/'}
+2022-02-17 15:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/life/page/2/>
+{'link': 'http://quotes.toscrape.com/author/Jimi-Hendrix'}
+2022-02-17 15:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/life/page/2/>
+{'link': 'http://quotes.toscrape.com/tag/death/page/1/'}
+2022-02-17 15:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/life/page/2/>
+{'link': 'http://quotes.toscrape.com/author/Khaled-Hosseini'}
+2022-02-17 15:12:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/women/page/1/> (referer: http://quotes.toscrape.com/tag/humor/page/2/)
+2022-02-17 15:12:13 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Khaled-Hosseini/> from <GET http://quotes.toscrape.com/author/Khaled-Hosseini>
+2022-02-17 15:12:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Khaled-Hosseini/> (referer: http://quotes.toscrape.com/tag/life/page/2/)
+2022-02-17 15:12:13 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Jimi-Hendrix/> from <GET http://quotes.toscrape.com/author/Jimi-Hendrix>
+2022-02-17 15:12:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Jimi-Hendrix/> (referer: http://quotes.toscrape.com/tag/life/page/2/)
+2022-02-17 15:12:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/death/page/1/> (referer: http://quotes.toscrape.com/tag/life/page/2/)
+2022-02-17 15:12:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/romantic/page/1/> (referer: http://quotes.toscrape.com/tag/humor/page/2/)
+2022-02-17 15:12:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/sinister/page/1/> (referer: http://quotes.toscrape.com/tag/humor/page/2/)
+2022-02-17 15:12:14 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/W-C-Fields/> from <GET http://quotes.toscrape.com/author/W-C-Fields>
+2022-02-17 15:12:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/W-C-Fields/> (referer: http://quotes.toscrape.com/tag/humor/page/2/)
+2022-02-17 15:12:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/regrets/page/1/> (referer: http://quotes.toscrape.com/tag/life/)
+2022-02-17 15:12:15 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Ralph-Waldo-Emerson/> from <GET http://quotes.toscrape.com/author/Ralph-Waldo-Emerson>
+2022-02-17 15:12:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Ralph-Waldo-Emerson/> (referer: http://quotes.toscrape.com/tag/life/)
+2022-02-17 15:12:16 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/George-Bernard-Shaw/> from <GET http://quotes.toscrape.com/author/George-Bernard-Shaw>
+2022-02-17 15:12:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/George-Bernard-Shaw/> (referer: http://quotes.toscrape.com/tag/life/)
+2022-02-17 15:12:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/yourself/page/1/> (referer: http://quotes.toscrape.com/tag/life/)
+2022-02-17 15:12:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/comedy/page/1/> (referer: http://quotes.toscrape.com/tag/life/)
+2022-02-17 15:12:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/plans/page/1/> (referer: http://quotes.toscrape.com/tag/life/)
+2022-02-17 15:12:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/planning/page/1/> (referer: http://quotes.toscrape.com/tag/life/)
+2022-02-17 15:12:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/misattributed-john-lennon/page/1/> (referer: http://quotes.toscrape.com/tag/life/)
+2022-02-17 15:12:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/fate/page/1/> (referer: http://quotes.toscrape.com/tag/life/)
+2022-02-17 15:12:18 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Allen-Saunders/> from <GET http://quotes.toscrape.com/author/Allen-Saunders>
+2022-02-17 15:12:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Allen-Saunders/> (referer: http://quotes.toscrape.com/tag/life/)
+2022-02-17 15:12:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/navigation/page/1/> (referer: http://quotes.toscrape.com/tag/life/)
+2022-02-17 15:12:18 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Douglas-Adams/> from <GET http://quotes.toscrape.com/author/Douglas-Adams>
+2022-02-17 15:12:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Douglas-Adams/> (referer: http://quotes.toscrape.com/tag/life/)
+2022-02-17 15:12:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/philosophy/page/1/> (referer: http://quotes.toscrape.com/tag/humor/)
+2022-02-17 15:12:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/philosophy/page/1/>
+{'link': 'http://quotes.toscrape.com/author/Elie-Wiesel'}
+2022-02-17 15:12:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/philosophy/page/1/>
+{'link': 'http://quotes.toscrape.com/tag/activism/page/1/'}
+2022-02-17 15:12:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/philosophy/page/1/>
+{'link': 'http://quotes.toscrape.com/tag/apathy/page/1/'}
+2022-02-17 15:12:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/philosophy/page/1/>
+{'link': 'http://quotes.toscrape.com/tag/hate/page/1/'}
+2022-02-17 15:12:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/philosophy/page/1/>
+{'link': 'http://quotes.toscrape.com/tag/indifference/page/1/'}
+2022-02-17 15:12:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/philosophy/page/1/>
+{'link': 'http://quotes.toscrape.com/tag/opposite/page/1/'}
+2022-02-17 15:12:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/open-mind/page/1/> (referer: http://quotes.toscrape.com/tag/humor/)
+2022-02-17 15:12:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/opposite/page/1/> (referer: http://quotes.toscrape.com/tag/philosophy/page/1/)
+2022-02-17 15:12:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/indifference/page/1/> (referer: http://quotes.toscrape.com/tag/philosophy/page/1/)
+2022-02-17 15:12:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/hate/page/1/> (referer: http://quotes.toscrape.com/tag/philosophy/page/1/)
+2022-02-17 15:12:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/apathy/page/1/> (referer: http://quotes.toscrape.com/tag/philosophy/page/1/)
+2022-02-17 15:12:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/activism/page/1/> (referer: http://quotes.toscrape.com/tag/philosophy/page/1/)
+2022-02-17 15:12:20 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Elie-Wiesel/> from <GET http://quotes.toscrape.com/author/Elie-Wiesel>
+2022-02-17 15:12:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Elie-Wiesel/> (referer: http://quotes.toscrape.com/tag/philosophy/page/1/)
+2022-02-17 15:12:21 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Terry-Pratchett/> from <GET http://quotes.toscrape.com/author/Terry-Pratchett>
+2022-02-17 15:12:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Terry-Pratchett/> (referer: http://quotes.toscrape.com/tag/humor/)
+2022-02-17 15:12:21 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Charles-Bukowski/> from <GET http://quotes.toscrape.com/author/Charles-Bukowski>
+2022-02-17 15:12:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Charles-Bukowski/> (referer: http://quotes.toscrape.com/tag/humor/)
+2022-02-17 15:12:22 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Suzanne-Collins/> from <GET http://quotes.toscrape.com/author/Suzanne-Collins>
+2022-02-17 15:12:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Suzanne-Collins/> (referer: http://quotes.toscrape.com/tag/humor/)
+2022-02-17 15:12:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/food/page/1/> (referer: http://quotes.toscrape.com/tag/humor/)
+2022-02-17 15:12:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/chocolate/page/1/> (referer: http://quotes.toscrape.com/tag/humor/)
+2022-02-17 15:12:23 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Charles-M-Schulz/> from <GET http://quotes.toscrape.com/author/Charles-M-Schulz>
+2022-02-17 15:12:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Charles-M-Schulz/> (referer: http://quotes.toscrape.com/tag/humor/)
+2022-02-17 15:12:23 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Jim-Henson/> from <GET http://quotes.toscrape.com/author/Jim-Henson>
+2022-02-17 15:12:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Jim-Henson/> (referer: http://quotes.toscrape.com/tag/humor/)
+2022-02-17 15:12:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/religion/page/1/> (referer: http://quotes.toscrape.com/tag/humor/)
+2022-02-17 15:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/religion/page/1/>
+{'link': 'http://quotes.toscrape.com/tag/christianity/page/1/'}
+2022-02-17 15:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/religion/page/1/>
+{'link': 'http://quotes.toscrape.com/tag/faith/page/1/'}
+2022-02-17 15:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/religion/page/1/>
+{'link': 'http://quotes.toscrape.com/tag/sun/page/1/'}
+2022-02-17 15:12:24 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Garrison-Keillor/> from <GET http://quotes.toscrape.com/author/Garrison-Keillor>
+2022-02-17 15:12:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Garrison-Keillor/> (referer: http://quotes.toscrape.com/tag/humor/)
+2022-02-17 15:12:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/sun/page/1/> (referer: http://quotes.toscrape.com/tag/religion/page/1/)
+2022-02-17 15:12:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/faith/page/1/> (referer: http://quotes.toscrape.com/tag/religion/page/1/)
+2022-02-17 15:12:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/christianity/page/1/> (referer: http://quotes.toscrape.com/tag/religion/page/1/)
+2022-02-17 15:12:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/inspirational/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/inspirational/>
+{'link': 'http://quotes.toscrape.com/author/George-Eliot'}
+2022-02-17 15:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/inspirational/>
+{'link': 'http://quotes.toscrape.com/author/Martin-Luther-King-Jr'}
+2022-02-17 15:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/inspirational/>
+{'link': 'http://quotes.toscrape.com/tag/hope/page/1/'}
+2022-02-17 15:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/inspirational/>
+{'link': 'http://quotes.toscrape.com/author/Helen-Keller'}
+2022-02-17 15:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/inspirational/>
+{'link': 'http://quotes.toscrape.com/tag/inspirational/page/2/'}
+2022-02-17 15:12:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/love/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/love/>
+{'link': 'http://quotes.toscrape.com/author/Pablo-Neruda'}
+2022-02-17 15:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/love/>
+{'link': 'http://quotes.toscrape.com/tag/poetry/page/1/'}
+2022-02-17 15:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/love/>
+{'link': 'http://quotes.toscrape.com/tag/girls/page/1/'}
+2022-02-17 15:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/love/>
+{'link': 'http://quotes.toscrape.com/author/James-Baldwin'}
+2022-02-17 15:12:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/love/>
+{'link': 'http://quotes.toscrape.com/tag/love/page/2/'}
+2022-02-17 15:12:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/inspirational/page/2/> (referer: http://quotes.toscrape.com/tag/inspirational/)
+2022-02-17 15:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/inspirational/page/2/>
+{'link': 'http://quotes.toscrape.com/author/John-Lennon'}
+2022-02-17 15:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/inspirational/page/2/>
+{'link': 'http://quotes.toscrape.com/tag/beatles/page/1/'}
+2022-02-17 15:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/inspirational/page/2/>
+{'link': 'http://quotes.toscrape.com/tag/connection/page/1/'}
+2022-02-17 15:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/inspirational/page/2/>
+{'link': 'http://quotes.toscrape.com/tag/dreamers/page/1/'}
+2022-02-17 15:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/inspirational/page/2/>
+{'link': 'http://quotes.toscrape.com/tag/dreaming/page/1/'}
+2022-02-17 15:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/inspirational/page/2/>
+{'link': 'http://quotes.toscrape.com/tag/dreams/page/1/'}
+2022-02-17 15:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/inspirational/page/2/>
+{'link': 'http://quotes.toscrape.com/tag/peace/page/1/'}
+2022-02-17 15:12:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/love/page/2/> (referer: http://quotes.toscrape.com/tag/love/)
+2022-02-17 15:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/love/page/2/>
+{'link': 'http://quotes.toscrape.com/author/J-M-Barrie'}
+2022-02-17 15:12:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/tag/love/page/2/>
+{'link': 'http://quotes.toscrape.com/tag/adventure/page/1/'}
+2022-02-17 15:12:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/peace/page/1/> (referer: http://quotes.toscrape.com/tag/inspirational/page/2/)
+2022-02-17 15:12:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/adventure/page/1/> (referer: http://quotes.toscrape.com/tag/love/page/2/)
+2022-02-17 15:12:26 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/J-M-Barrie/> from <GET http://quotes.toscrape.com/author/J-M-Barrie>
+2022-02-17 15:12:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/J-M-Barrie/> (referer: http://quotes.toscrape.com/tag/love/page/2/)
+2022-02-17 15:12:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/dreams/page/1/> (referer: http://quotes.toscrape.com/tag/inspirational/page/2/)
+2022-02-17 15:12:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/dreaming/page/1/> (referer: http://quotes.toscrape.com/tag/inspirational/page/2/)
+2022-02-17 15:12:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/dreamers/page/1/> (referer: http://quotes.toscrape.com/tag/inspirational/page/2/)
+2022-02-17 15:12:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/connection/page/1/> (referer: http://quotes.toscrape.com/tag/inspirational/page/2/)
+2022-02-17 15:12:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/beatles/page/1/> (referer: http://quotes.toscrape.com/tag/inspirational/page/2/)
+2022-02-17 15:12:28 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/John-Lennon/> from <GET http://quotes.toscrape.com/author/John-Lennon>
+2022-02-17 15:12:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/John-Lennon/> (referer: http://quotes.toscrape.com/tag/inspirational/page/2/)
+2022-02-17 15:12:29 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/James-Baldwin/> from <GET http://quotes.toscrape.com/author/James-Baldwin>
+2022-02-17 15:12:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/James-Baldwin/> (referer: http://quotes.toscrape.com/tag/love/)
+2022-02-17 15:12:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/girls/page/1/> (referer: http://quotes.toscrape.com/tag/love/)
+2022-02-17 15:12:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/poetry/page/1/> (referer: http://quotes.toscrape.com/tag/love/)
+2022-02-17 15:12:29 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Pablo-Neruda/> from <GET http://quotes.toscrape.com/author/Pablo-Neruda>
+2022-02-17 15:12:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Pablo-Neruda/> (referer: http://quotes.toscrape.com/tag/love/)
+2022-02-17 15:12:30 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Helen-Keller/> from <GET http://quotes.toscrape.com/author/Helen-Keller>
+2022-02-17 15:12:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Helen-Keller/> (referer: http://quotes.toscrape.com/tag/inspirational/)
+2022-02-17 15:12:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/hope/page/1/> (referer: http://quotes.toscrape.com/tag/inspirational/)
+2022-02-17 15:12:31 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Martin-Luther-King-Jr/> from <GET http://quotes.toscrape.com/author/Martin-Luther-King-Jr>
+2022-02-17 15:12:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Martin-Luther-King-Jr/> (referer: http://quotes.toscrape.com/tag/inspirational/)
+2022-02-17 15:12:31 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/George-Eliot/> from <GET http://quotes.toscrape.com/author/George-Eliot>
+2022-02-17 15:12:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/George-Eliot/> (referer: http://quotes.toscrape.com/tag/inspirational/)
+2022-02-17 15:12:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/page/2/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:32 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/2/>
+{'link': 'http://quotes.toscrape.com/tag/simplicity/page/1/'}
+2022-02-17 15:12:32 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/2/>
+{'link': 'http://quotes.toscrape.com/tag/understand/page/1/'}
+2022-02-17 15:12:32 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/2/>
+{'link': 'http://quotes.toscrape.com/tag/fantasy/page/1/'}
+2022-02-17 15:12:32 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/2/>
+{'link': 'http://quotes.toscrape.com/page/1/'}
+2022-02-17 15:12:32 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/2/>
+{'link': 'http://quotes.toscrape.com/page/3/'}
+2022-02-17 15:12:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/simile/page/1/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/page/3/> (referer: http://quotes.toscrape.com/page/2/)
+2022-02-17 15:12:32 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/3/>
+{'link': 'http://quotes.toscrape.com/tag/happiness/page/1/'}
+2022-02-17 15:12:32 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/3/>
+{'link': 'http://quotes.toscrape.com/author/Mother-Teresa'}
+2022-02-17 15:12:32 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/3/>
+{'link': 'http://quotes.toscrape.com/tag/attributed-no-source/page/1/'}
+2022-02-17 15:12:32 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/3/>
+{'link': 'http://quotes.toscrape.com/tag/imagination/page/1/'}
+2022-02-17 15:12:32 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/3/>
+{'link': 'http://quotes.toscrape.com/tag/music/page/1/'}
+2022-02-17 15:12:32 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/3/>
+{'link': 'http://quotes.toscrape.com/page/4/'}
+2022-02-17 15:12:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/page/1/> (referer: http://quotes.toscrape.com/page/2/)
+2022-02-17 15:12:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/page/4/> (referer: http://quotes.toscrape.com/page/3/)
+2022-02-17 15:12:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/4/>
+{'link': 'http://quotes.toscrape.com/tag/dumbledore/page/1/'}
+2022-02-17 15:12:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/4/>
+{'link': 'http://quotes.toscrape.com/tag/misattributed-to-mother-teresa/page/1/'}
+2022-02-17 15:12:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/4/>
+{'link': 'http://quotes.toscrape.com/page/5/'}
+2022-02-17 15:12:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/music/page/1/> (referer: http://quotes.toscrape.com/page/3/)
+2022-02-17 15:12:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/page/5/> (referer: http://quotes.toscrape.com/page/4/)
+2022-02-17 15:12:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/5/>
+{'link': 'http://quotes.toscrape.com/page/6/'}
+2022-02-17 15:12:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/misattributed-to-mother-teresa/page/1/> (referer: http://quotes.toscrape.com/page/4/)
+2022-02-17 15:12:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/page/6/> (referer: http://quotes.toscrape.com/page/5/)
+2022-02-17 15:12:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/6/>
+{'link': 'http://quotes.toscrape.com/tag/attributed/page/1/'}
+2022-02-17 15:12:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/6/>
+{'link': 'http://quotes.toscrape.com/tag/fear/page/1/'}
+2022-02-17 15:12:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/6/>
+{'link': 'http://quotes.toscrape.com/tag/inspiration/page/1/'}
+2022-02-17 15:12:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/6/>
+{'link': 'http://quotes.toscrape.com/author/Alexandre-Dumas-fils'}
+2022-02-17 15:12:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/6/>
+{'link': 'http://quotes.toscrape.com/tag/misattributed-to-einstein/page/1/'}
+2022-02-17 15:12:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/6/>
+{'link': 'http://quotes.toscrape.com/page/7/'}
+2022-02-17 15:12:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/dumbledore/page/1/> (referer: http://quotes.toscrape.com/page/4/)
+2022-02-17 15:12:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/page/7/> (referer: http://quotes.toscrape.com/page/6/)
+2022-02-17 15:12:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/7/>
+{'link': 'http://quotes.toscrape.com/tag/alcohol/page/1/'}
+2022-02-17 15:12:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/7/>
+{'link': 'http://quotes.toscrape.com/tag/the-hunger-games/page/1/'}
+2022-02-17 15:12:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/7/>
+{'link': 'http://quotes.toscrape.com/author/J-R-R-Tolkien'}
+2022-02-17 15:12:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/7/>
+{'link': 'http://quotes.toscrape.com/tag/bilbo/page/1/'}
+2022-02-17 15:12:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/7/>
+{'link': 'http://quotes.toscrape.com/tag/journey/page/1/'}
+2022-02-17 15:12:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/7/>
+{'link': 'http://quotes.toscrape.com/tag/lost/page/1/'}
+2022-02-17 15:12:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/7/>
+{'link': 'http://quotes.toscrape.com/tag/quest/page/1/'}
+2022-02-17 15:12:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/7/>
+{'link': 'http://quotes.toscrape.com/tag/travel/page/1/'}
+2022-02-17 15:12:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/7/>
+{'link': 'http://quotes.toscrape.com/tag/wander/page/1/'}
+2022-02-17 15:12:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/7/>
+{'link': 'http://quotes.toscrape.com/tag/live-death-love/page/1/'}
+2022-02-17 15:12:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/7/>
+{'link': 'http://quotes.toscrape.com/tag/education/page/1/'}
+2022-02-17 15:12:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/7/>
+{'link': 'http://quotes.toscrape.com/tag/troubles/page/1/'}
+2022-02-17 15:12:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/7/>
+{'link': 'http://quotes.toscrape.com/page/8/'}
+2022-02-17 15:12:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/misattributed-to-einstein/page/1/> (referer: http://quotes.toscrape.com/page/6/)
+2022-02-17 15:12:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/page/8/> (referer: http://quotes.toscrape.com/page/7/)
+2022-02-17 15:12:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/8/>
+{'link': 'http://quotes.toscrape.com/author/Ayn-Rand'}
+2022-02-17 15:12:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/8/>
+{'link': 'http://quotes.toscrape.com/page/9/'}
+2022-02-17 15:12:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/troubles/page/1/> (referer: http://quotes.toscrape.com/page/7/)
+2022-02-17 15:12:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/page/9/> (referer: http://quotes.toscrape.com/page/8/)
+2022-02-17 15:12:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/9/>
+{'link': 'http://quotes.toscrape.com/tag/mistakes/page/1/'}
+2022-02-17 15:12:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/9/>
+{'link': 'http://quotes.toscrape.com/tag/integrity/page/1/'}
+2022-02-17 15:12:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/9/>
+{'link': 'http://quotes.toscrape.com/tag/elizabeth-bennet/page/1/'}
+2022-02-17 15:12:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/9/>
+{'link': 'http://quotes.toscrape.com/tag/jane-austen/page/1/'}
+2022-02-17 15:12:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/9/>
+{'link': 'http://quotes.toscrape.com/tag/age/page/1/'}
+2022-02-17 15:12:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/9/>
+{'link': 'http://quotes.toscrape.com/tag/fairytales/page/1/'}
+2022-02-17 15:12:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/9/>
+{'link': 'http://quotes.toscrape.com/tag/growing-up/page/1/'}
+2022-02-17 15:12:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/9/>
+{'link': 'http://quotes.toscrape.com/tag/god/page/1/'}
+2022-02-17 15:12:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/9/>
+{'link': 'http://quotes.toscrape.com/page/10/'}
+2022-02-17 15:12:35 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Ayn-Rand/> from <GET http://quotes.toscrape.com/author/Ayn-Rand>
+2022-02-17 15:12:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Ayn-Rand/> (referer: http://quotes.toscrape.com/page/8/)
+2022-02-17 15:12:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/page/10/> (referer: http://quotes.toscrape.com/page/9/)
+2022-02-17 15:12:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/10/>
+{'link': 'http://quotes.toscrape.com/author/Harper-Lee'}
+2022-02-17 15:12:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://quotes.toscrape.com/page/10/>
+{'link': 'http://quotes.toscrape.com/tag/better-life-empathy/page/1/'}
+2022-02-17 15:12:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/god/page/1/> (referer: http://quotes.toscrape.com/page/9/)
+2022-02-17 15:12:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/better-life-empathy/page/1/> (referer: http://quotes.toscrape.com/page/10/)
+2022-02-17 15:12:36 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Harper-Lee/> from <GET http://quotes.toscrape.com/author/Harper-Lee>
+2022-02-17 15:12:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Harper-Lee/> (referer: http://quotes.toscrape.com/page/10/)
+2022-02-17 15:12:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/growing-up/page/1/> (referer: http://quotes.toscrape.com/page/9/)
+2022-02-17 15:12:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/fairytales/page/1/> (referer: http://quotes.toscrape.com/page/9/)
+2022-02-17 15:12:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/age/page/1/> (referer: http://quotes.toscrape.com/page/9/)
+2022-02-17 15:12:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/jane-austen/page/1/> (referer: http://quotes.toscrape.com/page/9/)
+2022-02-17 15:12:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/elizabeth-bennet/page/1/> (referer: http://quotes.toscrape.com/page/9/)
+2022-02-17 15:12:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/integrity/page/1/> (referer: http://quotes.toscrape.com/page/9/)
+2022-02-17 15:12:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/mistakes/page/1/> (referer: http://quotes.toscrape.com/page/9/)
+2022-02-17 15:12:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/education/page/1/> (referer: http://quotes.toscrape.com/page/7/)
+2022-02-17 15:12:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/live-death-love/page/1/> (referer: http://quotes.toscrape.com/page/7/)
+2022-02-17 15:12:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/wander/page/1/> (referer: http://quotes.toscrape.com/page/7/)
+2022-02-17 15:12:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/travel/page/1/> (referer: http://quotes.toscrape.com/page/7/)
+2022-02-17 15:12:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/quest/page/1/> (referer: http://quotes.toscrape.com/page/7/)
+2022-02-17 15:12:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/lost/page/1/> (referer: http://quotes.toscrape.com/page/7/)
+2022-02-17 15:12:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/journey/page/1/> (referer: http://quotes.toscrape.com/page/7/)
+2022-02-17 15:12:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/bilbo/page/1/> (referer: http://quotes.toscrape.com/page/7/)
+2022-02-17 15:12:42 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/J-R-R-Tolkien/> from <GET http://quotes.toscrape.com/author/J-R-R-Tolkien>
+2022-02-17 15:12:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/J-R-R-Tolkien/> (referer: http://quotes.toscrape.com/page/7/)
+2022-02-17 15:12:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/the-hunger-games/page/1/> (referer: http://quotes.toscrape.com/page/7/)
+2022-02-17 15:12:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/alcohol/page/1/> (referer: http://quotes.toscrape.com/page/7/)
+2022-02-17 15:12:42 [scrapy.extensions.logstats] INFO: Crawled 172 pages (at 172 pages/min), scraped 239 items (at 239 items/min)
+2022-02-17 15:12:43 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Alexandre-Dumas-fils/> from <GET http://quotes.toscrape.com/author/Alexandre-Dumas-fils>
+2022-02-17 15:12:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Alexandre-Dumas-fils/> (referer: http://quotes.toscrape.com/page/6/)
+2022-02-17 15:12:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/inspiration/page/1/> (referer: http://quotes.toscrape.com/page/6/)
+2022-02-17 15:12:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/fear/page/1/> (referer: http://quotes.toscrape.com/page/6/)
+2022-02-17 15:12:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/attributed/page/1/> (referer: http://quotes.toscrape.com/page/6/)
+2022-02-17 15:12:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/imagination/page/1/> (referer: http://quotes.toscrape.com/page/3/)
+2022-02-17 15:12:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/attributed-no-source/page/1/> (referer: http://quotes.toscrape.com/page/3/)
+2022-02-17 15:12:45 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Mother-Teresa/> from <GET http://quotes.toscrape.com/author/Mother-Teresa>
+2022-02-17 15:12:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Mother-Teresa/> (referer: http://quotes.toscrape.com/page/3/)
+2022-02-17 15:12:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/happiness/page/1/> (referer: http://quotes.toscrape.com/page/3/)
+2022-02-17 15:12:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/fantasy/page/1/> (referer: http://quotes.toscrape.com/page/2/)
+2022-02-17 15:12:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/understand/page/1/> (referer: http://quotes.toscrape.com/page/2/)
+2022-02-17 15:12:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/simplicity/page/1/> (referer: http://quotes.toscrape.com/page/2/)
+2022-02-17 15:12:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/obvious/page/1/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:46 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Steve-Martin/> from <GET http://quotes.toscrape.com/author/Steve-Martin>
+2022-02-17 15:12:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Steve-Martin/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/misattributed-eleanor-roosevelt/page/1/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:47 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Eleanor-Roosevelt/> from <GET http://quotes.toscrape.com/author/Eleanor-Roosevelt>
+2022-02-17 15:12:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Eleanor-Roosevelt/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/paraphrased/page/1/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/failure/page/1/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/edison/page/1/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:48 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Thomas-A-Edison/> from <GET http://quotes.toscrape.com/author/Thomas-A-Edison>
+2022-02-17 15:12:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Thomas-A-Edison/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/love/page/1/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:49 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Andre-Gide/> from <GET http://quotes.toscrape.com/author/Andre-Gide>
+2022-02-17 15:12:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Andre-Gide/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/value/page/1/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/success/page/1/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/adulthood/page/1/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/be-yourself/page/1/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:50 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Marilyn-Monroe/> from <GET http://quotes.toscrape.com/author/Marilyn-Monroe>
+2022-02-17 15:12:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Marilyn-Monroe/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/humor/page/1/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/classic/page/1/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/books/page/1/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/aliteracy/page/1/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:52 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Jane-Austen/> from <GET http://quotes.toscrape.com/author/Jane-Austen>
+2022-02-17 15:12:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Jane-Austen/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/miracles/page/1/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/miracle/page/1/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/live/page/1/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/life/page/1/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/inspirational/page/1/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/choices/page/1/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/abilities/page/1/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:54 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/J-K-Rowling/> from <GET http://quotes.toscrape.com/author/J-K-Rowling>
+2022-02-17 15:12:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/J-K-Rowling/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/world/page/1/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/thinking/page/1/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/tag/deep-thoughts/page/1/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:56 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (308) to <GET http://quotes.toscrape.com/author/Albert-Einstein/> from <GET http://quotes.toscrape.com/author/Albert-Einstein>
+2022-02-17 15:12:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://quotes.toscrape.com/author/Albert-Einstein/> (referer: http://quotes.toscrape.com/)
+2022-02-17 15:12:56 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://quotes.toscrape.com/> from <GET http://quotes.toscrape.com/logout>
+2022-02-17 15:12:56 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-02-17 15:12:56 [scrapy.extensions.feedexport] INFO: Stored csv feed (239 items) in: results_toscrape_withLogin.csv
+2022-02-17 15:12:56 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 122461,
+ 'downloader/request_count': 267,
+ 'downloader/request_method_count/GET': 266,
+ 'downloader/request_method_count/POST': 1,
+ 'downloader/response_bytes': 350629,
+ 'downloader/response_count': 267,
+ 'downloader/response_status_count/200': 215,
+ 'downloader/response_status_count/302': 2,
+ 'downloader/response_status_count/308': 50,
+ 'dupefilter/filtered': 26,
+ 'elapsed_time_seconds': 73.746998,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 2, 17, 14, 12, 56, 619982),
+ 'httpcompression/response_bytes': 1050771,
+ 'httpcompression/response_count': 215,
+ 'item_scraped_count': 239,
+ 'log_count/DEBUG': 507,
+ 'log_count/INFO': 12,
+ 'request_depth_max': 11,
+ 'response_received_count': 215,
+ 'scheduler/dequeued': 267,
+ 'scheduler/dequeued/memory': 267,
+ 'scheduler/enqueued': 267,
+ 'scheduler/enqueued/memory': 267,
+ 'start_time': datetime.datetime(2022, 2, 17, 14, 11, 42, 872984)}
+2022-02-17 15:12:56 [scrapy.core.engine] INFO: Spider closed (finished)

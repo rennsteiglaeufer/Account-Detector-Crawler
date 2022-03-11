@@ -1,0 +1,9 @@
+{
+    "name": "com.aifb.startcrawler",
+    "description": "Start crawler",
+    "path": "startcrawler.bat",
+    "type": "stdio",
+    "allowed_origins": [
+      "chrome-extension://jchdnojfhidkkbjfkbchihplcdhbpono/"
+    ]
+  }
